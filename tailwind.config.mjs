@@ -7,6 +7,10 @@ export default {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        Abel: ["Abel", "serif"],
+        ArchivoBlack: ["Archivo Black", "serif"],
+      },
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
