@@ -1,28 +1,33 @@
 export default function Content() {
   return (
     <>
-      <div className="flex justify-items-start justify-start flex-col w-5/12 h-5/6 ml-80">
-        <a className="text-6xl font-ArchivoBlack">
-          A Magia da Conversa
+      <div className="flex flex-col w-screen items-center">
+        <a className="flex font-ArchivoBlack w-[320px] text-4xl ">
+          A Magia da
           <br />
-          Conecte-se, Influencie
-          <br />e Venda
+          Conversa
+          <br />
+          Conecte-se,
+          <br />
+          Influencie e
+          <br />
+          venda
         </a>
-        <a className="text-5xl font-Abel mt-4">Descubra as estratégias que</a>
-        <a className="text-5xl font-Abel mt-4">
-          transformam simples interações
+        <a className="flex font-Abel w-[320px] text-2xl mt-5">
+          Descubra as estratégias que
+          <br />
+          transformam simples
+          <br />
+          interações em clientes fiéis.
         </a>
-        <a className="text-5xl font-Abel mt-4">em clientes fiéis.</a>
-        <a className="text-2xl font-Abel mt-4">
-          Aprenda com Daniel Reginatto como usar automação, segmentação e
+        <a className="font-Abel w-[320px] text-base mt-5">
+          Aprenda com Daniel Regginatto como usar
+          <br />
+          automação, segmentação e persuasão para
+          <br />
+          fechar mais vendas e crescer exponencialmente.
         </a>
-        <a className="text-2xl font-Abel">
-          {" "}
-          persuasão para fechar mais vendas e crescer exponencialmente.
-        </a>
-        <button className="text-xl font-ArchivoBlack w-72 h-12 bg-[#FFEC5C] rounded-lg shadow-2xl mt-4">
-          Garanta seu exemplar
-        </button>
+        <img src="public/images/HEADERMOB.svg" />
       </div>
     </>
   );
