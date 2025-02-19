@@ -1,22 +1,24 @@
 export default function Header() {
   return (
     <>
-      <div className=" flex justify-end h-10 w-430 bg-[#f4dcb6] ">
+      <div className=" flex items-center justify-end h-20 w-430 bg-[#f2dbb2]">
         <div className="hidden md:block">
-          <div className="flex items-baseline space-x-4">
-            <a href="#" className="font-Abel">
+          <div className="flex items-baseline space-x-8 mr-28">
+            <a href="#" className="font-Abel text-lg">
               O que você vai aprender?
             </a>
-            <a href="#" className="font-Abel">
+            <a href="#" className="font-Abel text-lg">
               Prefácio
             </a>
-            <a href="#" className="font-Abel">
+            <a href="#" className="font-Abel text-lg">
               Sobre o autor
             </a>
-            <button className="font-ArchivoBlack">comprar</button>
+            <button className="font-ArchivoBlack  bg-yellow-300 rounded-xl pt-2 pb-2 pl-4 pr-4 shadow-xl">
+              comprar
+            </button>
           </div>
         </div>
-        <button className="md:hidden mr-4">
+        <button className="md:hidden pr-4">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             x="0px"
