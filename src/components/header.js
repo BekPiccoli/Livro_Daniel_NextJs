@@ -1,27 +1,21 @@
 "use client";
 import { useState, useEffect } from "react";
-
+import MenuIcon from "@/components/icons/Menu.js";
+import CloseIcon from "@/components/icons/Close.js";
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const screenWidth = window.screen.width;
+  const [screenWidth, setScreenWidth] = useState(0);
 
   useEffect(() => {
-    {
-      if (screenWidth > 768) {
-        setIsMenuOpen(false);
-      }
-    }
-  }),
-    [];
+    const handleResize = () => setScreenWidth(window.innerWidth);
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
 
-  console.log("Menu: ", isMenuOpen);
-  console.log("Tela: ", screenWidth);
   return (
     <>
       <div
-        className={`flex items-center justify-end h-20 w-screen bg-[#EFD7A2] ${
-          isMenuOpen ? "bg-white" : "bg-[#EFD7A2] "
-        }`}
+        className={`flex items-center justify-end h-20 w-screen bg-[#EFD7A2] `}
       >
         <div className="hidden md:block">
           <div className="flex items-baseline space-x-8 mr-28">
@@ -41,29 +35,24 @@ export default function Header() {
         </div>
         <button
           onClick={() => setIsMenuOpen(!isMenuOpen)}
-          className="pr-4 fixed md:hidden "
+          className="pr-4 absolute top-4 right-4 z-50 md:hidden"
         >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            x="0px"
-            y="0px"
-            width="35"
-            height="35"
-            viewBox="0 0 50 50"
-          >
-            <path d="M 5 8 A 2.0002 2.0002 0 1 0 5 12 L 45 12 A 2.0002 2.0002 0 1 0 45 8 L 5 8 z M 5 23 A 2.0002 2.0002 0 1 0 5 27 L 45 27 A 2.0002 2.0002 0 1 0 45 23 L 5 23 z M 5 38 A 2.0002 2.0002 0 1 0 5 42 L 45 42 A 2.0002 2.0002 0 1 0 45 38 L 5 38 z"></path>
-          </svg>
+          {isMenuOpen ? <CloseIcon /> : <MenuIcon />}
         </button>
         <div
-          className={`absolute xl:hidden top-16  left-0 w-full bg-white flex flex-col items-center  transform transition-transform ${
-            isMenuOpen ? "block" : "hidden"
+          className={`fixed top-0 left-0 w-full h-1/2 bg-black flex flex-col items-center justify-center rounded-b-xl  shadow-2xl transition-all duration-500 ${
+            isMenuOpen
+              ? "opacity-100 translate-y-0"
+              : "opacity-0 -translate-y-full"
           } `}
-          style={{ transition: "transform 0.3s ease, opacity 0.3 ease" }}
         >
-          <ul className="space-y-8 md:hidden w-full flex flex-col items-center border-b-gray-300 border-cyan-400">
-            <li>Teste</li>
-            <li className="">Teste</li>
-            <li className="">Teste</li>
+          <ul
+            role="menu"
+            className=" space-y-8 md:hidden w-full h-1/2 flex flex-col items-center justify-center bg-slate-700 border border-white"
+          >
+            <li className="text-white bg-red-200">Teste</li>
+            <li className="text-white bg-red-200">Teste</li>
+            <li className="text-white bg-red-200">Teste</li>
           </ul>
         </div>
       </div>
