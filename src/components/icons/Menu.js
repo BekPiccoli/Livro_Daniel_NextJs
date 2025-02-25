@@ -1,4 +1,14 @@
+"use client";
+import { useState, useEffect } from "react";
+
 export default function Menu() {
+  const [screenHeight, setScreenHeight] = useState(0);
+  useEffect(() => {
+    const handleResize = () => setScreenHeight(window.innerHeight);
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"

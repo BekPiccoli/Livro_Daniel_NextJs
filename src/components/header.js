@@ -1,17 +1,16 @@
 "use client";
-import { useState, useEffect } from "react";
+import "@/app/globals.css";
+import { useState, useRef } from "react";
 import MenuIcon from "@/components/icons/Menu.js";
 import CloseIcon from "@/components/icons/Close.js";
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [screenWidth, setScreenWidth] = useState(0);
-
-  useEffect(() => {
-    const handleResize = () => setScreenWidth(window.innerWidth);
-    window.addEventListener("resize", handleResize);
-    return () => window.removeEventListener("resize", handleResize);
-  }, []);
-
+  const aboutRef = useRef(null);
+  const servicesRef = useRef(null);
+  const scrollToSection = (ref) => {
+    ref.current?.scrollIntoView({ behavior: "smooth" });
+    setIsMenuOpen(false);
+  };
   return (
     <>
       <div
@@ -19,15 +18,14 @@ export default function Header() {
       >
         <div className="hidden md:block">
           <div className="flex items-baseline space-x-8 mr-28">
-            <a href="#" className="font-Abel text-lg">
+            <button
+              onClick={() => scrollToSection(aboutRef)}
+              className="font-Abel text-lg"
+            >
               O que você vai aprender?
-            </a>
-            <a href="#" className="font-Abel text-lg">
-              Prefácio
-            </a>
-            <a href="#" className="font-Abel text-lg">
-              Sobre o autor
-            </a>
+            </button>
+            <button className="font-Abel text-lg">Prefácio</button>
+            <button className="font-Abel text-lg">Sobre o autor</button>
             <button className="font-ArchivoBlack  bg-yellow-300 rounded-xl pt-2 pb-2 pl-4 pr-4 shadow-xl">
               comprar
             </button>
@@ -48,11 +46,17 @@ export default function Header() {
         >
           <ul
             role="menu"
-            className=" space-y-8 md:hidden w-full h-1/2 flex flex-col items-center justify-center bg-slate-700 border border-white"
+            className=" space-y-12 md:hidden w-full h-2/3 flex flex-col items-center justify-center"
           >
-            <li className="text-white bg-red-200">Teste</li>
-            <li className="text-white bg-red-200">Teste</li>
-            <li className="text-white bg-red-200">Teste</li>
+            <li className="text-white text-xl font-Abel hover:text-yellow-20 hover:text-2xl  hover:duration-300 ease-in-out">
+              O que você vai aprender?
+            </li>
+            <li className="text-white text-xl font-Abel hover:text-yellow-20 hover:text-2xl  hover:duration-300 ease-in-out ">
+              Prefácio
+            </li>
+            <li className="text-white text-xl font-Abel hover:text-yellow-20 hover:text-2xl  hover:duration-300 ease-in-out">
+              Sobre o autor
+            </li>
           </ul>
         </div>
       </div>

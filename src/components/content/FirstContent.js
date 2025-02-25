@@ -1,5 +1,4 @@
-import Image from "next/image";
-export default function Content() {
+export default function FirstContent() {
   return (
     <>
       <div className="bg-[#EFD7A2] xl:flex ">
@@ -53,7 +52,7 @@ export default function Content() {
             Compre agora e dscubra como transformar suas interaçõesem vendas!
           </a>
           <div className=" ">
-            <button className="font-ArchivoBlack  bg-[#FFEC5C] rounded-xl mt-10 pt-4 pb-4 pl-10 pr-10 shadow-xl">
+            <button className="font-ArchivoBlack  bg-[#FFEC5C] rounded-xl mb-10 mt-10 pt-4 pb-4 pl-10 pr-10 shadow-xl">
               Garanta seu exemplar!
             </button>
           </div>
