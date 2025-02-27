@@ -1,4 +1,4 @@
-import Header from "@/components/header.js";
+import Header from "@/components/content/header.js";
 export default function contatos() {
   return (
     <>

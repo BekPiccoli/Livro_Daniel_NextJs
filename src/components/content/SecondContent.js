@@ -1,30 +1,29 @@
-"use client";
-import Header from "../header";
-import { useRef } from "react";
-
 export default function SecondContent({ learnRef }) {
   return (
     <>
-      <div className="h-screen w-screen  bg-black ">
-        <div className="flex flex-col h-24 justify-center items-center bg-white md:flex ">
+      <div className="min-h-screen w-screen  bg-black ">
+        <div className="flex flex-col h-24 justify-center items-center  md:flex-row md:justify-center ">
           <a
             ref={learnRef}
-            className="font-ArchivoBlack  w-4/5 text-3xl text-[#FFEC5C] md:text-4xl xl:text-4xl"
+            className="font-ArchivoBlack text-3xl text-[#FFEC5C] md:text-4xl xl:text-4xl"
           >
             O que Você
           </a>
 
-          <a className="font-ArchivoBlack  w-4/5 text-3xl text-[#FFEC5C] md:text-4xl xl:text-4xl">
+          <a className="font-ArchivoBlack pl-5 text-3xl text-[#FFEC5C] md:text-4xl xl:text-4xl">
             Vai Aprender?
           </a>
         </div>
-        <div className="flex flex-wrap justify-evenly h-screen w-screen  bg-black">
-          {/* <div className="h-1/3 w-5/12 rounded-xl border-2 border-[#FFEC5C] bg-green-400 "></div> */}
+        <div className="flex flex-wrap justify-evenly w-screen  bg-black">
           <div className="h-[290px] w-[170px] flex flex-col items-center m-2 rounded-xl border-2 border-[#FFEC5C] bg-black xl:h-[330px] xl:w-[230]">
-            <div className=" flex justify-start  h-[70px] w-[160px]">
-              <img className="p-4" src="/images/Vector.svg" alt="Vector" />
+            <div className="flex items-center justify-start  h-[80px] w-[160px] md:h-[140px]">
+              <img
+                className="ml-2 w- md:w-12 xl:w-16"
+                src="/images/Vector.svg"
+                alt="Vector"
+              />
             </div>
-            <div className="bg-gray-400 flex flex-col w-10/12">
+            <div className=" flex flex-col w-9/12">
               <a className="text-white font-ArchivoBlack">
                 Técnicas de Venda Comprovadas
               </a>
@@ -35,10 +34,14 @@ export default function SecondContent({ learnRef }) {
             </div>
           </div>
           <div className="h-[290px] w-[170px] flex flex-col items-center m-2 rounded-xl border-2 border-[#FFEC5C] bg-black xl:h-[330px] xl:w-[230]">
-            <div className=" flex justify-start h-[70px] w-[160px]">
-              <img className="p-4" src="/images/X.svg" alt="X " />
+            <div className="flex items-center justify-start  h-[80px] w-[160px] md:h-[140px]">
+              <img
+                className="ml-2 w-8 md:w-12 xl:w-16"
+                src="/images/X.svg"
+                alt="X "
+              />
             </div>
-            <div className="bg-gray-400 flex flex-col h-48 w-10/12">
+            <div className=" flex flex-col h-48 w-9/12">
               <a className="text-white font-ArchivoBlack">
                 Erros que Você Deve Evitar
               </a>
@@ -49,10 +52,14 @@ export default function SecondContent({ learnRef }) {
             </div>
           </div>
           <div className="h-[290px] w-[170px] flex flex-col items-center m-2 rounded-xl border-2 border-[#FFEC5C] bg-black xl:h-[330px] xl:w-[230]">
-            <div className=" flex justify-start  h-[70px] w-[160px]">
-              <img className="p-4" src="/images/Coment.svg" alt="Coment" />
+            <div className="flex items-center justify-start  h-[80px] w-[160px] md:h-[140px]">
+              <img
+                className="ml-2 md:w-12 xl:w-16"
+                src="/images/Coment.svg"
+                alt="Coment"
+              />
             </div>
-            <div className="bg-gray-400 flex flex-col w-10/12">
+            <div className=" flex flex-col w-10/12">
               <a className="text-white font-ArchivoBlack">
                 Conversas que Geram Resultados
               </a>
@@ -63,14 +70,14 @@ export default function SecondContent({ learnRef }) {
             </div>
           </div>
           <div className="h-[290px] w-[170px] flex flex-col items-center m-2 rounded-xl border-2 border-[#FFEC5C] bg-black xl:h-[330px] xl:w-[230]">
-            <div className=" flex justify-start  h-[70px] w-[160px]">
+            <div className="flex items-center justify-start  h-[80px] w-[160px] xl:h-[140px]">
               <img
-                className="p-4"
+                className="ml-2 2-8 md:w-12 xl:w-16"
                 src="/images/FlashLigth.svg"
                 alt="FlashLigth"
               />
             </div>
-            <div className="bg-gray-400 flex flex-col w-10/12">
+            <div className=" flex flex-col w-9/12 mt-3">
               <a className="text-white font-ArchivoBlack">
                 Captação e Engajamento de Leads
               </a>
@@ -81,10 +88,14 @@ export default function SecondContent({ learnRef }) {
             </div>
           </div>
           <div className="h-[290px] w-[170px] flex flex-col items-center m-2 rounded-xl border-2 border-[#FFEC5C] bg-black xl:h-[330px] xl:w-[230]">
-            <div className=" flex justify-start  h-[70px] w-[160px]">
-              <img className="p-4" src="/images/Phone.svg" alt="Phone" />
+            <div className="flex items-center justify-start  h-[80px] w-[160px] md:h-[160px]">
+              <img
+                className="ml-2 w-6 md:w-8 xl:w-12"
+                src="/images/Phone.svg"
+                alt="Phone"
+              />
             </div>
-            <div className="bg-gray-400 flex flex-col w-10/12">
+            <div className=" flex flex-col w-10/12">
               <a className="text-white font-ArchivoBlack">
                 Automação e Personalização
               </a>
@@ -94,6 +105,11 @@ export default function SecondContent({ learnRef }) {
               </a>
             </div>
           </div>
+        </div>
+        <div className="flex items-center justify-center  bg-black h-28 w-screen xl:hidden">
+          <button className="font-ArchivoBlack  bg-[#FFEC5C] rounded-xl mb-10 mt-10 pt-4 pb-4 pl-10 pr-10 shadow-xl">
+            Garanta seu exemplar!
+          </button>
         </div>
       </div>
     </>

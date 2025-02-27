@@ -3,7 +3,7 @@ export default function FirstContent() {
     <>
       <div className="bg-[#EFD7A2] xl:flex ">
         <div className="flex flex-col w-screen items-center">
-          <a className="flex font-ArchivoBlack w-4/5  text-5xl xl:text-6xl">
+          <a className="flex font-ArchivoBlack w-5/6  text-5xl xl:text-6xl">
             A Magia da Conversa
             <br />
             Conecte-se, Influencie

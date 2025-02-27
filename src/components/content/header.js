@@ -38,7 +38,7 @@ export default function Header({ learnRef, prefacioRef }) {
 
         <button
           onClick={() => setIsMenuOpen(!isMenuOpen)}
-          className="pr-4 absolute top-4 right-4 z-50 md:hidden"
+          className="pr-4  top-4 right-4 z-50 md:hidden"
         >
           {isMenuOpen ? <CloseIcon /> : <MenuIcon />}
         </button>
