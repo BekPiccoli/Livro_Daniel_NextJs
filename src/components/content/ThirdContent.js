@@ -25,58 +25,61 @@ export default function ThirdContent() {
           que buscam não apenas sobreviver, mas prosperar.
         </p>
         <img className="w-full" src="images/sandro-sobre-img.png" alt="" />
+        <p className="font-ArchivoBlack w-screen h-16 flex justify-center text-white text-xl bg-black">
+          Prefácio de Sandro Magaldi
+        </p>
       </div>
-      <div className="h-screen w-screen bg-white ">
-        <div className="flex flex-col h-32 p-8 justify-center items-start md:flex-row md:justify-center ">
-          <a className="font-ArchivoBlack text-3xl text-black md:text-4xl xl:text-4xl">
-            Garanta Seu
-          </a>
-
-          <a className="font-ArchivoBlack  text-3xl text-black md:text-4xl xl:text-4xl">
-            Exemplar Agora
-          </a>
-        </div>
-        <div className="bg-red-50 h-full w-full flex items-center justify-evenly">
-          <div className="bg-black items-center justify-center h-1/3 w-2/5 rounded-3xl">
-            <div className="flex flex-col h-full w-full items-center">
-              <a className="text-[#FFEC5C] w-full h-1/4 pt-5 flex justify-center items-center font-ArchivoBlack text-3xl">
-                KINDLE
-              </a>
-              <div className="text-white flex items-center justify-evenly  w-20">
-                <a className="font-Abel">R$</a>
-                <a className="text-4xl font-ArchivoBlack">27</a>
-              </div>
-              <div className="flex flex-col items-center h-28">
-                <a className="font-Abel text-white">Acesso imediato</a>
-                <a className="font-Abel text-white">Formato PDF/</a>
-                <a className="font-Abel text-white">EPUB</a>
-              </div>
-              <button className="font-ArchivoBlack  bg-yellow-300 rounded-xl pt-2 pb-2 pl-4 pr-4 shadow-xl">
-                comprar
-              </button>
-            </div>
+      <div className="min-h-screen w-screen flex flex-col">
+        <div className=" bg-amber-200 ">
+          <div className="flex flex-col h-40 p-8 justify-center items-start md:flex-row md:justify-center ">
+            <a className="font-ArchivoBlack text-3xl text-black md:text-4xl xl:text-4xl">
+              Garanta Seu
+            </a>
+            <a className="font-ArchivoBlack  text-3xl text-black md:text-4xl xl:text-4xl">
+              Exemplar Agora
+            </a>
           </div>
+          <div className="bg-red-50 h-full flex items-start justify-evenly">
+            <div className="bg-black items-center justify-center h-2/5 w-5/12 rounded-3xl shadow-2xl">
+              <div className="flex flex-col h-full w-full items-center">
+                <a className="text-[#FFEC5C] w-full h-1/4 pt-5 flex justify-center items-center font-ArchivoBlack text-3xl">
+                  KINDLE
+                </a>
+                <div className="text-white flex items-center justify-evenly h-20  w-20">
+                  <a className="font-Abel">R$</a>
+                  <a className="text-4xl font-ArchivoBlack">27</a>
+                </div>
+                <div className="flex flex-col items-center  h-32">
+                  <a className="font-Abel text-white">Acesso imediato</a>
+                  <a className="font-Abel text-white">Formato PDF/</a>
+                  <a className="font-Abel text-white">EPUB</a>
+                </div>
+                <button className="font-ArchivoBlack text-xl  bg-[#FFEC5C] rounded-xl pt-2 pb-2 pl-5 pr-5 ">
+                  comprar
+                </button>
+              </div>
+            </div>
+            <div className="bg-black items-center justify-center h-2/5 w-5/12 rounded-3xl shadow-2xl">
+              <div className="flex flex-col h-full w-full items-center">
+                <a className="text-[#FFEC5C] w-full h-1/4 pt-5 flex justify-center items-center font-ArchivoBlack text-3xl">
+                  LIVRO
+                </a>
+                <div className="text-white flex items-center justify-evenly h-20 w-20">
+                  <a className="font-Abel">R$</a>
+                  <a className="text-4xl font-ArchivoBlack">57</a>
+                </div>
+                <div className="flex flex-col items-center  h-32">
+                  <a className="font-Abel text-white">Frete grátis para</a>
+                  <a className="font-Abel text-white">todo o Brasil</a>
 
-          <div className="bg-black items-center justify-center h-1/3 w-2/5 rounded-3xl">
-            <div className="flex flex-col h-full w-full items-center">
-              <a className="text-[#FFEC5C] w-full h-1/4 pt-5 flex justify-center items-center font-ArchivoBlack text-3xl">
-                LIVRO
-              </a>
-              <div className="text-white flex items-center justify-evenly  w-20">
-                <a className="font-Abel">R$</a>
-                <a className="text-4xl font-ArchivoBlack">57</a>
+                  <a className="font-Abel text-white">Capa premium e</a>
+                  <a className="font-Abel text-white">acabamento </a>
+                  <a className="font-Abel text-white"> especial</a>
+                </div>
+                <button className="font-ArchivoBlack text-xl  bg-[#FFEC5C] rounded-xl pt-2 pb-2 pl-5 pr-5 ">
+                  comprar
+                </button>
               </div>
-              <div className="flex flex-col  w-full items-center h-28 justify-center bg-red-700">
-                <a className="font-Abel text-white">
-                  Frete grátis para todo o Brasil
-                </a>
-                <a className="font-Abel text-white flex items-center justify-center">
-                  Capa premium e acabamento especial/
-                </a>
-              </div>
-              <button className="font-ArchivoBlack  bg-yellow-300 rounded-xl pt-2 pb-2 pl-4 pr-4 shadow-xl">
-                comprar
-              </button>
             </div>
           </div>
         </div>
