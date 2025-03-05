@@ -3,7 +3,7 @@ import { useState } from "react";
 import MenuIcon from "@/components/icons/Menu.js";
 import CloseIcon from "@/components/icons/Close.js";
 
-export default function Header({ learnRef, prefacioRef }) {
+export default function Header({ learnRef, prefacioRef, aboutRef }) {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const scrollToSection = (ref) => {
@@ -29,7 +29,12 @@ export default function Header({ learnRef, prefacioRef }) {
             >
               Prefácio
             </button>
-            <button className="font-Abel text-lg">Sobre o autor</button>
+            <button
+              onClick={() => scrollToSection(aboutRef)}
+              className="font-Abel text-lg"
+            >
+              Sobre o autor
+            </button>
             <button className="font-ArchivoBlack  bg-yellow-300 rounded-xl pt-2 pb-2 pl-4 pr-4 shadow-xl">
               comprar
             </button>
@@ -65,7 +70,10 @@ export default function Header({ learnRef, prefacioRef }) {
             >
               Prefácio
             </li>
-            <li className="text-white text-xl font-Abel hover:text-yellow-20 hover:text-2xl  hover:duration-300 ease-in-out">
+            <li
+              onClick={() => scrollToSection(aboutRef)}
+              className="text-white text-xl font-Abel hover:text-yellow-20 hover:text-2xl  hover:duration-300 ease-in-out"
+            >
               Sobre o autor
             </li>
           </ul>
