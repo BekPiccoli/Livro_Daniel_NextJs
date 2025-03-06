@@ -3,18 +3,18 @@ export default function ThirdContent({ prefacioRef }) {
     <>
       <div
         ref={prefacioRef}
-        className="min-h-screen w-screen flex flex-col items-center justify-start  bg-black"
+        className="w-screen flex flex-col items-center justify-start  bg-black"
       >
-        <div className=" mt-10 flex flex-col items-center bg-black md:flex md:flex-row md:justify-between">
-          <div className="w-full flex flex-col items-center md:w-3/5 md:h-[600px] xl:w-3/5 xl:h-[800px]">
-            <p className="text-white font-Abel w-5/6 md:text-xl xl:text-3xl">
+        <div className=" mt-10 flex flex-col items-center bg-black md:flex md:flex-row md:justify-between md:pb-16">
+          <div className="w-full flex flex-col items-center md:w-4/5 md:h-[600px] xl:w-3/5 xl:h-[800px]">
+            <p className="text-white font-Abel w-11/12 md:text-xl xl:text-3xl">
               Vivemos em tempos nos quais as regras do jogo não apenas mudaram –
               elas continuam mudando, e numa velocidade alucinante. Atravessamos
               uma era onde a tecnologia não é mais uma vantagem competitiva: é
               um pressuposto básico de qualquer negócio, o ponto de partida.
             </p>
             <br />
-            <p className="text-white font-Abel  w-5/6 md:text-xl xl:text-3xl">
+            <p className="text-white font-Abel w-11/12 md:text-xl xl:text-3xl">
               Uma das disciplinas da gestão mais impactadas por esse novo
               contexto é a área comercial. As antigas técnicas de vendas,
               baseadas apenas em superação de objeções e técnicas de fechamento,
@@ -23,19 +23,19 @@ export default function ThirdContent({ prefacioRef }) {
               confiança com clientes nunca foi tão feroz.
             </p>
             <br />
-            <p className="text-white font-Abel w-5/6 md:text-xl xl:text-3xl">
+            <p className="text-white font-Abel w-11/12 md:text-xl xl:text-3xl">
               É nesse cenário de transformações intensas que
               <a className="text-[#FFEC5C]">“A Magia das Conversas” </a>
               se apresenta como um farol para vendedores, empreendedores e
               líderes que buscam não apenas sobreviver, mas prosperar.
             </p>
-            <p className="hidden font-ArchivoBlack  w-5/6 text-white text-lg bg-black md:block md:text-xl xl:text-3xl ">
+            <p className="hidden font-ArchivoBlack  text-white  bg-black  w-11/12 md:block md:text-3xl ">
               Prefácio de Sandro Magaldi
             </p>
           </div>
           <img
             className="w-full md:h-1/4 md:w-6/12"
-            src="images/sandro-sobre-img.png"
+            src="images/SandroPreface.svg"
             alt="Sandro Imagem"
           />
         </div>
