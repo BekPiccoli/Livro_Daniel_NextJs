@@ -1,7 +1,7 @@
 export default function ThirdContent({ prefacioRef }) {
   return (
     <>
-      <div
+      <section
         ref={prefacioRef}
         className="w-screen flex flex-col items-center justify-start  bg-black"
       >
@@ -25,7 +25,7 @@ export default function ThirdContent({ prefacioRef }) {
             <br />
             <p className="text-white font-Abel w-11/12 md:text-xl xl:text-3xl">
               É nesse cenário de transformações intensas que
-              <a className="text-[#FFEC5C]">“A Magia das Conversas” </a>
+              <span className="text-[#FFEC5C]">“A Magia das Conversas” </span>
               se apresenta como um farol para vendedores, empreendedores e
               líderes que buscam não apenas sobreviver, mas prosperar.
             </p>
@@ -42,8 +42,8 @@ export default function ThirdContent({ prefacioRef }) {
         <p className="font-ArchivoBlack w-screen h-16 flex justify-center items-center text-white text-xl bg-black md:hidden">
           Prefácio de Sandro Magaldi
         </p>
-      </div>
-      <div className="w-screen flex flex-col">
+      </section>
+      <section className="w-screen flex flex-col">
         <div className="flex flex-col h-40 p-8 justify-center items-start md:flex-row md:justify-center ">
           <a className="font-ArchivoBlack text-3xl text-black md:text-4xl xl:text-4xl">
             Garanta Seu
@@ -53,65 +53,66 @@ export default function ThirdContent({ prefacioRef }) {
           </a>
         </div>
         <div className="bg-white flex h-[500px] items-start justify-evenly">
-          <div className="bg-black items-center justify-center h-[400px] w-5/12 rounded-3xl shadow-2xl md:w-[350px] xl:w-[400px]">
+          <div className="bg-black items-center justify-center h-[400px] w-[180px] rounded-3xl shadow-2xl md:w-[350px] xl:w-[400px]">
             <div className="flex flex-col h-full w-full items-center">
-              <a className="text-[#FFEC5C] w-full h-1/4 pt-5 flex justify-center items-center font-ArchivoBlack text-3xl">
+              <p className="text-[#FFEC5C] w-full h-1/4 pt-5 flex justify-center items-center font-ArchivoBlack text-3xl">
                 KINDLE
-              </a>
+              </p>
               <div className="text-white flex items-center justify-evenly h-20 w-20 ">
-                <a className="font-Abel">R$</a>
-                <a className="text-4xl font-ArchivoBlack md:text-5xl">27</a>
+                <p className="font-Abel">R$</p>
+                <p className="text-4xl font-ArchivoBlack md:text-5xl">27</p>
               </div>
               <div className="flex flex-col items-center  h-32">
-                <a className="font-Abel text-white  md:text-lg">
-                  Acesso imediato
-                </a>
-                <a className="font-Abel text-white  md:text-lg">Formato PDF/</a>
-                <a className="font-Abel text-white  md:text-lg">EPUB</a>
+                <p className="font-Abel text-white  md:text-lg">
+                  <span>✔</span> Acesso imediato
+                </p>
+                <p className="font-Abel text-white  md:text-lg">
+                  <span>✔</span> Formato PDF/
+                </p>
+                <p className="font-Abel text-white  md:text-lg">EPUB</p>
               </div>
-              <button className="font-ArchivoBlack text-xl  bg-[#FFEC5C] rounded-xl pt-2 pb-2 pl-5 pr-5 md:text-2xl md:pl-9 md:pr-9">
-                comprar
+              <button className="font-ArchivoBlack text-lg pt-2 pb-2 pl-4 pr-4 bg-[#FFEC5C] rounded-xl  md:text-2xl md:pl-9 md:pr-9">
+                Compre Agora
               </button>
             </div>
           </div>
-          <div className="bg-black items-center justify-center h-[400px] w-5/12 rounded-3xl shadow-2xl md:w-[350px] xl:w-[400px]">
+          <div className="bg-black items-center justify-center h-[400px] w-[180px] rounded-3xl shadow-2xl md:w-[350px] xl:w-[400px]">
             <div className="flex flex-col h-full w-full items-center">
-              <a className="text-[#FFEC5C] w-full h-1/4 pt-5 flex justify-center items-center font-ArchivoBlack text-3xl">
+              <p className="text-[#FFEC5C] w-full h-1/4 pt-5 flex justify-center items-center font-ArchivoBlack text-3xl">
                 LIVRO
-              </a>
+              </p>
               <div className="text-white flex items-center justify-evenly h-20 w-20">
-                <a className="font-Abel">R$</a>
-                <a className="text-4xl font-ArchivoBlack md:text-5xl">57</a>
+                <p className="font-Abel">R$</p>
+                <p className="text-4xl font-ArchivoBlack md:text-5xl">57</p>
               </div>
               <div className="flex flex-col items-center h-32 md:w-[300px] ">
                 <div className=" flex flex-col items-center md:flex md:flex-row">
-                  <a className="font-Abel text-white md:text-lg">
-                    Frete grátis para
-                  </a>
-                  <a className="font-Abel text-white md:text-lg md:ml-1">
+                  <p className="font-Abel text-white md:text-lg">
+                    <span>✔</span> Frete grátis para
+                  </p>
+                  <p className="font-Abel text-white md:text-lg md:ml-1">
                     todo o Brasil
-                  </a>
+                  </p>
                 </div>
                 <div className=" flex flex-col items-center md:flex md:flex-row ">
-                  <a className="font-Abel text-white md:text-lg">
-                    Capa premium e
-                  </a>
-                  <a className="font-Abel text-white md:text-lg md:ml-1">
+                  <p className="font-Abel text-white md:text-lg">
+                    <span>✔</span> Capa premium e
+                  </p>
+                  <p className="font-Abel text-white md:text-lg md:ml-1">
                     acabamento
-                  </a>
+                  </p>
                 </div>
-                <a className="font-Abel text-white md:text-lg md:ml-1">
-                  {" "}
+                <p className="font-Abel text-white md:text-lg md:ml-1">
                   especial
-                </a>
+                </p>
               </div>
-              <button className="font-ArchivoBlack text-xl  bg-[#FFEC5C] rounded-xl pt-2 pb-2 pl-5 pr-5 md:text-2xl md:pl-9 md:pr-9">
-                comprar
+              <button className="font-ArchivoBlack text-lg pt-2 pb-2 pl-4 pr-4 bg-[#FFEC5C] rounded-xl md:text-2xl md:pl-9 md:pr-9">
+                Compre Agora
               </button>
             </div>
           </div>
         </div>
-      </div>
+      </section>
     </>
   );
 }

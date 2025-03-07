@@ -1,39 +1,39 @@
 export default function FourthContent({ aboutRef }) {
   return (
     <>
-      <div
+      <section
         ref={aboutRef}
-        className="w-screen gap-6 flex flex-col items-center justify-center bg-black md:flex md:flex-row"
+        className="w-screen flex flex-col items-center justify-center bg-black md:flex md:flex-row"
       >
-        <div className="flex flex-col gap-8 h-5/6 mt-5 justify-center items-center md:w-11/12">
-          <p className="font-ArchivoBlack text-4xl w-5/6  text-white">
+        <div className="flex flex-col gap-8 h-5/6 mt-5 justify-center items-center md:w-6/12">
+          <p className="font-ArchivoBlack text-4xl w-5/6  text-white xl:text-5xl">
             Sobre o autor
           </p>
 
-          <p className="font-Abel text-white text-2xl w-5/6 ">
+          <p className="font-Abel text-white text-2xl w-5/6 xl:text-3xl">
             Daniel Reginatto é casado e pai de 4 filhos, dedicado à família e
             apaixonado por inovação e empreendedorismo.
           </p>
-          <p className="font-Abel text-white text-2xl w-5/6 ">
+          <p className="font-Abel text-white text-2xl w-5/6 xl:text-3xl">
             Empresário e fundador da Redrive, acumulou experiências marcantes
             como diretor de tecnologia na Wise Up e cofundador do
             meuSucesso.com.
           </p>
-          <p className="font-Abel text-white text-2xl w-5/6 ">
+          <p className="font-Abel text-white text-2xl w-5/6 xl:text-3xl">
             Com métodos inovadores de vendas via WhatsApp, ajudou milhares de
             empresas a crescerem exponencialmente através da Redrive, impactando
             negócios em mais de 30 países.
           </p>
         </div>
         <img
-          className="h-[600px] md:w-6/12 h-[500px]xl:w-[1000px] xl:h-[700px]"
+          className=" p-0 m-0 h-full md:w-6/12 h-[500px]xl:w-[1000px] xl:h-full"
           src="images/Daniel.svg"
           alt="Daniel Imagem"
         />
-      </div>
-      <div className="md:flex md:flex-row-reverse md:h-[400px] md:w-screen md:bg-black">
-        <div className="w-screen h-40 flex flex-col items-center justify-center mt-10 bg-black">
-          <p className="text-white font-ArchivoBlack text-2xl">
+      </section>
+      <section className="m-0 md:flex md:flex-row-reverse md:w-screen md:bg-black">
+        <div className="w-screen h-40 flex flex-col items-center justify-center bg-black xl:m-15">
+          <p className="text-white font-ArchivoBlack ml-5 text-2xl">
             Siga Daniel nas redes sociais
           </p>
           <div className="flex flex-row space-x-8 pt-3 ">
@@ -44,37 +44,38 @@ export default function FourthContent({ aboutRef }) {
           </div>
         </div>
         <div className="flex justify-center flex-col items-center h-[400px] w-screen bg-black">
-          <p className="text-white font-ArchivoBlack text-2xl">
-            Dúvidas? Entre em Contato!
-          </p>
-
+          <div>
+            <p className="text-white font-ArchivoBlack text-3xl">
+              Dúvidas? Entre em Contato!
+            </p>
+          </div>
           <label className="flex flex-col justify-center items-center  gap-3 h-2/3 w-2/3 bg-">
             <input
-              className="rounded-lg w-5/6 h-10 placeholder:text-gray-400 placeholder:p-2"
+              className="rounded-lg w-5/6 h-10 placeholder:text-gray-400 px-4"
               placeholder="Nome"
               type="text"
-              name=""
-              id=""
+              name="Nome"
+              id="Nome"
             />
 
             <input
-              className="rounded-lg w-5/6 h-10 placeholder:text-gray-400 placeholder:p-2"
+              className="rounded-lg w-5/6 h-10 placeholder:text-gray-400 px-4"
               placeholder="WhatsApp"
               type="email"
-              name=""
-              id=""
+              name="WhatsApp"
+              id="WhatsApp"
             />
 
-            <input
-              className="rounded-lg w-5/6 h-20 placeholder:text-gray-400 placeholder:p-2 placeholder:pt-3"
+            <textarea
+              className="rounded-lg w-5/6 h-20 placeholder:text-gray-400 px-4"
               placeholder="Mensagem"
               type="text"
-              name=""
-              id=""
+              name="Mensagem"
+              id="Mensagem"
             />
           </label>
         </div>
-      </div>
+      </section>
     </>
   );
 }

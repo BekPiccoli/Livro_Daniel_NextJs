@@ -1,18 +1,18 @@
 export default function SecondContent({ learnRef }) {
   return (
     <>
-      <div className=" w-screen  bg-black ">
+      <section className=" w-screen  bg-black ">
         <div className="flex flex-col h-24 justify-center items-center  md:flex-row md:justify-center ">
-          <a
+          <p
             ref={learnRef}
             className="font-ArchivoBlack text-3xl text-[#FFEC5C] md:text-4xl xl:text-4xl"
           >
             O que Você
-          </a>
+          </p>
 
-          <a className="font-ArchivoBlack pl-5 text-3xl text-[#FFEC5C] md:text-4xl xl:text-4xl">
+          <p className="font-ArchivoBlack pl-5 text-3xl text-[#FFEC5C] md:text-4xl xl:text-4xl">
             Vai Aprender?
-          </a>
+          </p>
         </div>
         <div className="flex flex-wrap justify-evenly w-screen  bg-black">
           <div className="h-[290px] w-[170px] flex flex-col items-center m-2 rounded-xl border-2 border-[#FFEC5C] bg-black xl:h-[330px] xl:w-[230]">
@@ -24,13 +24,13 @@ export default function SecondContent({ learnRef }) {
               />
             </div>
             <div className=" flex flex-col w-9/12">
-              <a className="text-white font-ArchivoBlack">
+              <p className="text-white font-ArchivoBlack">
                 Técnicas de Venda Comprovadas
-              </a>
-              <a className="text-white font-Abel">
+              </p>
+              <p className="text-white font-Abel">
                 Aprenda a construir uma máquina de vendas eficiente que gere
                 resultados costantes.
-              </a>
+              </p>
             </div>
           </div>
           <div className="h-[290px] w-[170px] flex flex-col items-center m-2 rounded-xl border-2 border-[#FFEC5C] bg-black xl:h-[330px] xl:w-[230]">
@@ -60,13 +60,13 @@ export default function SecondContent({ learnRef }) {
               />
             </div>
             <div className=" flex flex-col w-10/12">
-              <a className="text-white font-ArchivoBlack">
+              <p className="text-white font-ArchivoBlack">
                 Conversas que Geram Resultados
-              </a>
-              <a className="text-white font-Abel">
+              </p>
+              <p className="text-white font-Abel">
                 Transforme simples interações em oportunidades lucrativas e
                 escaláveis.
-              </a>
+              </p>
             </div>
           </div>
           <div className="h-[290px] w-[170px] flex flex-col items-center m-2 rounded-xl border-2 border-[#FFEC5C] bg-black xl:h-[330px] xl:w-[230]">
@@ -78,13 +78,13 @@ export default function SecondContent({ learnRef }) {
               />
             </div>
             <div className=" flex flex-col w-9/12 mt-3">
-              <a className="text-white font-ArchivoBlack">
+              <p className="text-white font-ArchivoBlack">
                 Captação e Engajamento de Leads
-              </a>
-              <a className="text-white font-Abel">
+              </p>
+              <p className="text-white font-Abel">
                 Domine estratégias para atrair e converter leads qualificados de
                 forma natural.
-              </a>
+              </p>
             </div>
           </div>
           <div className="h-[290px] w-[170px] flex flex-col items-center m-2 rounded-xl border-2 border-[#FFEC5C] bg-black xl:h-[330px] xl:w-[230]">
@@ -96,13 +96,13 @@ export default function SecondContent({ learnRef }) {
               />
             </div>
             <div className=" flex flex-col w-10/12">
-              <a className="text-white font-ArchivoBlack">
+              <p className="text-white font-ArchivoBlack">
                 Automação e Personalização
-              </a>
-              <a className="text-white font-Abel">
+              </p>
+              <p className="text-white font-Abel">
                 Descubra como WhatsApp, segmentação e mensagens personalizadas
                 podem impulsionar suas vendas.
-              </a>
+              </p>
             </div>
           </div>
         </div>
@@ -111,7 +111,7 @@ export default function SecondContent({ learnRef }) {
             Garanta seu exemplar!
           </button>
         </div>
-      </div>
+      </section>
     </>
   );
 }
