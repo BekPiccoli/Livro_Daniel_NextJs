@@ -45,7 +45,7 @@ export default function FourthContent({ aboutRef }) {
         </div>
         <div className="flex justify-center flex-col items-center h-[400px] w-screen bg-black">
           <div>
-            <p className="text-white font-ArchivoBlack text-3xl">
+            <p className="text-white font-ArchivoBlack pl-5 text-3xl">
               Dúvidas? Entre em Contato!
             </p>
           </div>
