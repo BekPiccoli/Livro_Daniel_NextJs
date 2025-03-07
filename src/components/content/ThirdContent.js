@@ -25,7 +25,7 @@ export default function ThirdContent({ prefacioRef }) {
             <br />
             <p className="text-white font-Abel w-11/12 md:text-xl xl:text-3xl">
               É nesse cenário de transformações intensas que
-              <span className="text-[#FFEC5C]">“A Magia das Conversas” </span>
+              <span className="text-[#FFEC5C]"> “A Magia das Conversas” </span>
               se apresenta como um farol para vendedores, empreendedores e
               líderes que buscam não apenas sobreviver, mas prosperar.
             </p>
@@ -71,7 +71,7 @@ export default function ThirdContent({ prefacioRef }) {
                 </p>
                 <p className="font-Abel text-white  md:text-lg">EPUB</p>
               </div>
-              <button className="font-ArchivoBlack text-lg pt-2 pb-2 pl-4 pr-4 bg-[#FFEC5C] rounded-xl  md:text-2xl md:pl-9 md:pr-9">
+              <button className="font-ArchivoBlack text-lg pt-2 pb-2 pl-3 pr-3 bg-[#FFEC5C] rounded-xl  md:text-2xl md:pl-9 md:pr-9">
                 Compre Agora
               </button>
             </div>
@@ -106,7 +106,7 @@ export default function ThirdContent({ prefacioRef }) {
                   especial
                 </p>
               </div>
-              <button className="font-ArchivoBlack text-lg pt-2 pb-2 pl-4 pr-4 bg-[#FFEC5C] rounded-xl md:text-2xl md:pl-9 md:pr-9">
+              <button className="font-ArchivoBlack text-lg pt-2 pb-2 pl-3 pr-3 bg-[#FFEC5C] rounded-xl md:text-2xl md:pl-9 md:pr-9">
                 Compre Agora
               </button>
             </div>
