@@ -2,7 +2,7 @@ export default function FirstContent() {
   return (
     <>
       <section className="bg-[#EFD7A2] flex flex-col items-center md:flex md:justify-evenly md:flex-row pb-10 ">
-        <div className="  flex flex-col  w-10/12 md:w-5/12 md:justify-center md:items-start ml-18">
+        <div className="  flex flex-col pb-8  w-10/12 md:w-5/12 md:justify-center md:items-start ml-18">
           <p className="flex font-ArchivoBlack w-full text-5xl xl:text-6xl">
             A Magia da Conversa
             <br />
