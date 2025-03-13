@@ -1,3 +1,4 @@
+import InputNameNumber from "@/components/inputs/InputNameNumber";
 export default function FourthContent({ aboutRef }) {
   return (
     <>
@@ -37,10 +38,26 @@ export default function FourthContent({ aboutRef }) {
             Siga Daniel nas redes sociais
           </p>
           <div className="flex flex-row space-x-8 pt-3 ">
-            <img className="cursor-pointer" src="images/linkedin.svg" alt="" />
-            <img className="cursor-pointer" src="images/whats.svg" alt="" />
-            <img className="cursor-pointer" src="images/instagram.svg" alt="" />
-            <img className="cursor-pointer" src="images/email.svg" alt="" />
+            <img
+              className="cursor-pointer"
+              src="images/linkedin.svg"
+              alt="Linkedin"
+            />
+            <img
+              className="cursor-pointer"
+              src="images/whats.svg"
+              alt="WhatsApp"
+            />
+            <img
+              className="cursor-pointer"
+              src="images/instagram.svg"
+              alt="instagram"
+            />
+            <img
+              className="cursor-pointer"
+              src="images/email.svg"
+              alt="Email"
+            />
           </div>
         </div>
         <div className="flex justify-center flex-col items-center h-[400px] w-screen bg-black">
@@ -49,31 +66,7 @@ export default function FourthContent({ aboutRef }) {
               Dúvidas? Entre em Contato!
             </p>
           </div>
-          <label className="flex flex-col justify-center items-center  gap-3 h-2/3 w-2/3 bg-">
-            <input
-              className="rounded-lg w-5/6 h-10 placeholder:text-gray-400 px-4"
-              placeholder="Nome"
-              type="text"
-              name="Nome"
-              id="Nome"
-            />
-
-            <input
-              className="rounded-lg w-5/6 h-10 placeholder:text-gray-400 px-4"
-              placeholder="WhatsApp"
-              type="email"
-              name="WhatsApp"
-              id="WhatsApp"
-            />
-
-            <textarea
-              className="rounded-lg w-5/6 h-20 placeholder:text-gray-400 px-4"
-              placeholder="Mensagem"
-              type="text"
-              name="Mensagem"
-              id="Mensagem"
-            />
-          </label>
+          <InputNameNumber />
         </div>
       </section>
     </>
