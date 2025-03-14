@@ -1,11 +1,9 @@
 import env from "dotenv";
 env.config({ path: ["../../.env"] });
-const api = process.env.API_KEY;
-const TOKEN = process.env.API_TOKEN;
-
+const api = process.env.NEXT_PUBLIC_API_KEY;
+const TOKEN = process.env.NEXT_PUBLIC_API_TOKEN;
 export async function FetchApi(name, phoneNumber) {
-  console.log(name, phoneNumber);
-  fetch(api, {
+  await fetch(api, {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
@@ -18,8 +16,8 @@ export async function FetchApi(name, phoneNumber) {
     }),
   })
     .then((res) => {
-      res.json();
-      console.log("Response: ", res);
+      const response = res.json();
+      console.log("Response: ", response);
     })
     .catch((err) => console.error("Error: ", err));
 }
