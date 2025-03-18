@@ -1,17 +1,20 @@
 "use client";
 import { useState, useEffect, useRef } from "react";
 import { PatternFormat } from "react-number-format";
-import { FetchApi } from "@/Services/createContact";
-import { useName, usePhoneNumber } from "@/hooks/Context";
+import { CreateContact } from "@/Services/createContact";
+import { SendMessage } from "../../Services/sendMessages";
+import TextArea from "./textArea";
+
 export default function InputNameNumber() {
-  const { name, setName } = useName("");
-  const { phoneNumber, setPhoneNumber } = usePhoneNumber("");
+  const [name, setName] = useState("");
+  const [phoneNumber, setPhoneNumber] = useState("");
   console.log(name);
   console.log(phoneNumber);
-
+  let [message, setMessage] = useState("");
   const handlesubmit = async (e) => {
     e.preventDefault();
-    await FetchApi(name, phoneNumber);
+    await CreateContact(name, phoneNumber);
+    await SendMessage(message);
   };
   const [isFocused, setIsFocused] = useState(false);
   const isMounted = useRef(false);
@@ -54,13 +57,7 @@ export default function InputNameNumber() {
           }`}
           onChange={(e) => setPhoneNumber(e.target.value)}
         />
-        <textarea
-          className="rounded-lg w-5/6 h-20 placeholder:text-gray-400 px-4"
-          placeholder="Mensagem"
-          type="text"
-          name="Mensagem"
-          id="Mensagem"
-        />
+        <TextArea onMessageChange={setMessage} />
         <input
           type="submit"
           value="Enviar"
