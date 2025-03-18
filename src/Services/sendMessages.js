@@ -11,14 +11,13 @@ export async function SendMessage(message) {
       Authorization: `Bearer ${TOKEN}`,
     },
     body: JSON.stringify({
-      bot: "5549999575047",
-      to: "5549999913904",
+      bot: "554999575047",
+      to: "554991751266",
       message: `${message}`,
     }),
   })
     .then((res) => {
-      const response = res.json();
-      console.log("Response: ", response);
+      res.json();
     })
     .catch((err) => console.error("Error: ", err));
 }

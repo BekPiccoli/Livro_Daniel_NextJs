@@ -8,14 +8,8 @@ import TextArea from "./textArea";
 export default function InputNameNumber() {
   const [name, setName] = useState("");
   const [phoneNumber, setPhoneNumber] = useState("");
-  console.log(name);
-  console.log(phoneNumber);
   let [message, setMessage] = useState("");
-  const handlesubmit = async (e) => {
-    e.preventDefault();
-    await CreateContact(name, phoneNumber);
-    await SendMessage(message);
-  };
+
   const [isFocused, setIsFocused] = useState(false);
   const isMounted = useRef(false);
 
@@ -26,6 +20,18 @@ export default function InputNameNumber() {
     }
     console.warn("input alterado");
   }, [isFocused]);
+
+  const handlesubmit = async (e) => {
+    e.preventDefault();
+    const currentName = name;
+    const currentPhoneNumber = phoneNumber;
+    const currentMessage = message;
+    setName("");
+    setPhoneNumber("");
+    setMessage("");
+    await CreateContact(currentName, currentPhoneNumber);
+    await SendMessage(currentMessage);
+  };
   return (
     <form
       onSubmit={handlesubmit}
@@ -56,8 +62,9 @@ export default function InputNameNumber() {
             isFocused ? "text-black" : "text-gray-400"
           }`}
           onChange={(e) => setPhoneNumber(e.target.value)}
+          value={phoneNumber}
         />
-        <TextArea onMessageChange={setMessage} />
+        <TextArea message={message} onMessageChange={setMessage} />
         <input
           type="submit"
           value="Enviar"

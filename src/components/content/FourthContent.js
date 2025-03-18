@@ -38,26 +38,45 @@ export default function FourthContent({ aboutRef }) {
             Siga Daniel nas redes sociais
           </p>
           <div className="flex flex-row space-x-8 pt-3 ">
-            <img
-              className="cursor-pointer"
-              src="images/linkedin.svg"
-              alt="Linkedin"
-            />
-            <img
-              className="cursor-pointer"
-              src="images/whats.svg"
-              alt="WhatsApp"
-            />
-            <img
-              className="cursor-pointer"
-              src="images/instagram.svg"
-              alt="instagram"
-            />
-            <img
-              className="cursor-pointer"
-              src="images/email.svg"
-              alt="Email"
-            />
+            <a
+              href="https://www.linkedin.com/in/danielreginatto/"
+              target="_blank"
+            >
+              <img
+                className="cursor-pointer"
+                src="images/linkedin.svg"
+                alt="Linkedin"
+              />
+            </a>
+            <a>
+              <img
+                className="cursor-pointer"
+                src="images/whats.svg"
+                alt="WhatsApp"
+              />
+            </a>
+
+            <a
+              href="https://www.instagram.com/daniel.reginatto/"
+              target="_blank"
+            >
+              <img
+                className="cursor-pointer"
+                src="images/instagram.svg"
+                alt="instagram"
+              />
+            </a>
+
+            <a
+              href="https://www.facebook.com/daniel.reginatto/"
+              target="_blank"
+            >
+              <img
+                className="cursor-pointer"
+                src="images/Facebook.svg"
+                alt="Facebook"
+              />
+            </a>
           </div>
         </div>
         <div className="flex justify-center flex-col items-center h-[400px] w-screen bg-black">

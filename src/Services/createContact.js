@@ -17,8 +17,7 @@ export async function CreateContact(name, phoneNumber) {
     }),
   })
     .then((res) => {
-      const response = res.json();
-      console.log("Response: ", response);
+      res.json();
     })
     .catch((err) => console.error("Error: ", err));
 }
