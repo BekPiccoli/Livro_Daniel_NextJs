@@ -3,7 +3,7 @@ env.config({ path: ["../../.env"] });
 const api = process.env.NEXT_PUBLIC_API_CREATE_ENDPOINT;
 const TOKEN = process.env.NEXT_PUBLIC_API_TOKEN;
 export async function CreateContact(name, phoneNumber) {
-  if (!name && !phoneNumber) return;
+  if (!name || !phoneNumber) return;
   await fetch(api, {
     method: "POST",
     headers: {

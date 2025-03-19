@@ -4,6 +4,8 @@ import { PatternFormat } from "react-number-format";
 import { CreateContact } from "@/Services/createContact";
 import { SendMessage } from "../../Services/sendMessages";
 import TextArea from "./textArea";
+import Alert from "@mui/material/Alert";
+import { Button } from "@mui/material";
 
 export default function InputNameNumber() {
   const [name, setName] = useState("");
@@ -12,7 +14,8 @@ export default function InputNameNumber() {
   const [isFocused, setIsFocused] = useState(false);
   const isMounted = useRef(false);
   const [isLoading, setIsLoading] = useState(false);
-
+  const [alertMessage, setAlertMessage] = useState(null);
+  const [alertType, setAlertType] = useState("success");
   useEffect(() => {
     if (!isMounted.current) {
       isMounted.current = true;
@@ -20,7 +23,12 @@ export default function InputNameNumber() {
     }
     console.warn("input alterado");
   }, [isFocused]);
-
+  useEffect(() => {
+    if (alertMessage) {
+      const timer = setTimeout(() => setAlertMessage(null), 3000);
+      return () => clearTimeout(timer); // Limpa o timeout se o componente for desmontado ou `alertMessage` mudar
+    }
+  }, [alertMessage]);
   const handlesubmit = async (e) => {
     e.preventDefault();
     setIsLoading(true);
@@ -31,11 +39,22 @@ export default function InputNameNumber() {
     setName("");
     setPhoneNumber("");
     setMessage("");
+
     try {
+      if (!currentName || !currentPhoneNumber || !currentMessage) {
+        setAlertMessage("Todos os campos devem estar preenchidos!");
+        setAlertType("error");
+        setIsLoading(false);
+        return;
+      }
+
       await CreateContact(currentName, currentPhoneNumber);
-      await SendMessage(currentMessage);
+      await SendMessage(currentName, currentPhoneNumber, currentMessage);
+      setAlertMessage("Enviado com sucesso!");
+      setAlertType("success");
     } catch (error) {
-      console.error("Erro ao enviar mensagem");
+      setAlertMessage("Erro ao enviar a mensagem.");
+      setAlertType("error");
     }
     setIsLoading(false);
   };
@@ -84,6 +103,16 @@ export default function InputNameNumber() {
             "Enviar"
           )}
         </button>
+        {alertMessage && (
+          <Alert
+            severity={alertType}
+            onClose={() => {
+              setAlertMessage(null);
+            }}
+          >
+            {alertMessage}
+          </Alert>
+        )}
       </label>
     </form>
   );
