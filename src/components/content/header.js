@@ -35,7 +35,7 @@ export default function Header({ learnRef, prefacioRef, aboutRef }) {
             >
               Sobre o autor
             </button>
-            <button className="font-ArchivoBlack  bg-[#FFEC5C] rounded-xl text-lg pt-2 pb-2 pl-6 pr-6 shadow-xl">
+            <button className="font-ArchivoBlack  bg-[#FFEC5C] rounded-xl text-lg pt-2 pb-2 pl-6 pr-6 shadow-xl hover:bg-white transition-all ease-in duration-200">
               comprar
             </button>
           </div>

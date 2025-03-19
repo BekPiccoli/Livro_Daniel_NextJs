@@ -9,9 +9,9 @@ export default function InputNameNumber() {
   const [name, setName] = useState("");
   const [phoneNumber, setPhoneNumber] = useState("");
   let [message, setMessage] = useState("");
-
   const [isFocused, setIsFocused] = useState(false);
   const isMounted = useRef(false);
+  const [isLoading, setIsLoading] = useState(false);
 
   useEffect(() => {
     if (!isMounted.current) {
@@ -23,14 +23,21 @@ export default function InputNameNumber() {
 
   const handlesubmit = async (e) => {
     e.preventDefault();
+    setIsLoading(true);
     const currentName = name;
     const currentPhoneNumber = phoneNumber;
     const currentMessage = message;
+
     setName("");
     setPhoneNumber("");
     setMessage("");
-    await CreateContact(currentName, currentPhoneNumber);
-    await SendMessage(currentMessage);
+    try {
+      await CreateContact(currentName, currentPhoneNumber);
+      await SendMessage(currentMessage);
+    } catch (error) {
+      console.error("Erro ao enviar mensagem");
+    }
+    setIsLoading(false);
   };
   return (
     <form
@@ -65,11 +72,18 @@ export default function InputNameNumber() {
           value={phoneNumber}
         />
         <TextArea message={message} onMessageChange={setMessage} />
-        <input
+
+        <button
           type="submit"
-          value="Enviar"
-          className="font-ArchivoBlack  bg-[#FFEC5C] rounded-xl text-lg pl-8 pr-8 shadow-xl cursor-pointer"
-        />
+          disabled={isFocused}
+          className="font-ArchivoBlack  bg-[#FFEC5C] rounded-xl text-lg pl-8 pr-8 pt-1 pb-1 shadow-xl cursor-pointer"
+        >
+          {isLoading ? (
+            <div className="h-5 w-5 border-4 border-l-black border-r-black border-b-black border-t-white animate-spin ease-linear rounded-full"></div>
+          ) : (
+            "Enviar"
+          )}
+        </button>
       </label>
     </form>
   );

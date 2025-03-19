@@ -22,7 +22,7 @@ export default function FirstContent() {
             <br />
             fechar mais vendas e crescer exponencialmente.
           </p>
-          <button className="font-ArchivoBlack  bg-[#FFEC5C] text-xl rounded-xl mb-10 mt-10 pt-4 pb-4 pl-10 pr-10 shadow-xl hidden md:block">
+          <button className="font-ArchivoBlack  bg-[#FFEC5C] text-xl rounded-xl mb-10 mt-10 pt-4 pb-4 pl-10 pr-10 shadow-xl hidden md:block hover:bg-white transition-all ease-in duration-200">
             Garanta seu exemplar!
           </button>
         </div>
@@ -55,7 +55,7 @@ export default function FirstContent() {
             Compre agora e dscubra como transformar suas interaçõesem vendas!
           </p>
           <div className=" ">
-            <button className="font-ArchivoBlack text-xl  bg-[#FFEC5C] rounded-xl mb-10 mt-10 pt-4 pb-4 pl-10 pr-10 shadow-xl">
+            <button className="font-ArchivoBlack text-xl  bg-[#FFEC5C] rounded-xl mb-10 mt-10 pt-4 pb-4 pl-10 pr-10 shadow-xl hover:bg-white transition-all ease-in duration-200">
               Garanta seu exemplar!
             </button>
           </div>
