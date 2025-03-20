@@ -5,7 +5,6 @@ import { CreateContact } from "@/Services/createContact";
 import { SendMessage } from "../../Services/sendMessages";
 import TextArea from "./textArea";
 import Alert from "@mui/material/Alert";
-import { Button } from "@mui/material";
 
 export default function InputNameNumber() {
   const [name, setName] = useState("");
@@ -16,6 +15,7 @@ export default function InputNameNumber() {
   const [isLoading, setIsLoading] = useState(false);
   const [alertMessage, setAlertMessage] = useState(null);
   const [alertType, setAlertType] = useState("success");
+  const [showAlert, setShowAlert] = useState(false);
   useEffect(() => {
     if (!isMounted.current) {
       isMounted.current = true;
@@ -25,8 +25,9 @@ export default function InputNameNumber() {
   }, [isFocused]);
   useEffect(() => {
     if (alertMessage) {
+      setShowAlert(true);
       const timer = setTimeout(() => setAlertMessage(null), 3000);
-      return () => clearTimeout(timer); // Limpa o timeout se o componente for desmontado ou `alertMessage` mudar
+      return () => clearTimeout(timer);
     }
   }, [alertMessage]);
   const handlesubmit = async (e) => {
@@ -98,20 +99,26 @@ export default function InputNameNumber() {
           className="font-ArchivoBlack  bg-[#FFEC5C] rounded-xl text-lg pl-8 pr-8 pt-1 pb-1 shadow-xl cursor-pointer"
         >
           {isLoading ? (
-            <div className="h-5 w-5 border-4 border-l-black border-r-black border-b-black border-t-white animate-spin ease-linear rounded-full"></div>
+            <div className="h-5 w-5  border-4 border-l-black border-r-black border-b-black border-t-[#FFEC5C]  animate-spin ease-linear rounded-full"></div>
           ) : (
             "Enviar"
           )}
         </button>
         {alertMessage && (
-          <Alert
-            severity={alertType}
-            onClose={() => {
-              setAlertMessage(null);
-            }}
+          <div
+            className={`fixed top-5 right-5 transition-opacity duration-500 ${
+              showAlert ? "opacity-100" : "opacity-0"
+            } `}
           >
-            {alertMessage}
-          </Alert>
+            <Alert
+              severity={alertType}
+              onClose={() => {
+                setAlertMessage(null);
+              }}
+            >
+              {alertMessage}
+            </Alert>
+          </div>
         )}
       </label>
     </form>

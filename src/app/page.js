@@ -7,8 +7,41 @@ import SecondContent from "@/components/content/SecondContent";
 import ThirdContent from "@/components/content/ThirdContent";
 import FourthContent from "@/components/content/FourthContent";
 import { useRef, useEffect } from "react";
+import { NextSeo } from "next-seo";
 
 export default function Home() {
+  const jsonLdData = {
+    "@context": "https://schema.org",
+    "@type": "Book",
+    name: "A Magia da Conversa",
+    author: {
+      "@type": "Person",
+      name: "Daniel Reginatto",
+    },
+    image: [
+      "https://www.facebook.com/photo/?fbid=7742024362542643&set=ecnf.100002054682222",
+    ],
+    description:
+      "Livro que ensina estratégias para transfor simples interações em clientes fiéis. Transformar conversas em vendas",
+    abstract:
+      "Aprenda com Daniel Regginatto como usar automação, segmentação e persuasão para fechar mais vendas e crescer exponencialmente.",
+    genre: "",
+    accessMode: ["textual", "visual"],
+    accessModeSufficient: {
+      "@type": "ItemList",
+      itemListElement: ["textual", "visual", "textoEmVisual"],
+      description: "Text and images",
+    },
+    offers: {
+      "@type": "Offer",
+      priceCurrency: "BRL",
+    },
+    countryOfOrigin: {
+      "@type": "Country",
+      name: "Brazil",
+    },
+  };
+
   useEffect(() => {
     document.title = "A Magia da Conversa | Daniel Regginato";
   }, []);
@@ -21,7 +54,9 @@ export default function Home() {
     <>
       <Head>
         <title>A Magia da Conversa | Daniel Regginato</title>
+        <NextSeo jsonLd={jsonLdData} />
       </Head>
+
       <div className="">
         <Header
           learnRef={learnRef}

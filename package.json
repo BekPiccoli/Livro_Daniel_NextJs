@@ -16,6 +16,7 @@
     "cleave.js": "^1.6.0",
     "dotenv": "^16.4.7",
     "next": "15.1.7",
+    "next-seo": "^6.6.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "react-number-format": "^5.4.3"
