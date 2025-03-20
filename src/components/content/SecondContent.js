@@ -107,7 +107,7 @@ export default function SecondContent({ learnRef }) {
           </div>
         </div>
         <div className="flex items-center justify-center bg-black h-28 w-screen md:hidden">
-          <button className="font-ArchivoBlack  bg-[#FFEC5C] rounded-xl mb-10 mt-10 pt-4 pb-4 pl-10 pr-10 shadow-xl">
+          <button className="font-ArchivoBlack  bg-[#FFEC5C] rounded-xl mb-10 mt-10 pt-4 pb-4 pl-10 pr-10 shadow-xl hover:bg-white transition-all ease-in duration-200">
             Garanta seu exemplar!
           </button>
         </div>

@@ -72,7 +72,8 @@ export default function ThirdContent({ prefacioRef }) {
                 <p className="font-Abel text-white  md:text-lg">EPUB</p>
               </div>
               <button className="font-ArchivoBlack text-lg pt-2 pb-2 pl-3 pr-3 bg-[#FFEC5C] rounded-xl  md:text-2xl md:pl-9 md:pr-9 hover:bg-white transition-all ease-in duration-200">
-                Compre Agora
+                <span className="sm:inline md:hidden">Comprar</span>
+                <span className="hidden md:inline">Compre Agora</span>
               </button>
             </div>
           </div>
@@ -107,7 +108,8 @@ export default function ThirdContent({ prefacioRef }) {
                 </p>
               </div>
               <button className="font-ArchivoBlack text-lg pt-2 pb-2 pl-3 pr-3 bg-[#FFEC5C] rounded-xl md:text-2xl md:pl-9 md:pr-9 hover:bg-white transition-all ease-in duration-200">
-                Compre Agora
+                <span className="sm:inline md:hidden">Comprar</span>
+                <span className="hidden md:inline">Compre Agora</span>
               </button>
             </div>
           </div>
