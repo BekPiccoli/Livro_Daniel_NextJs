@@ -33,11 +33,17 @@ export default function ThirdContent({ prefacioRef }) {
               Prefácio de Sandro Magaldi
             </p>
           </div>
-          <img
-            className="w-full md:h-1/4 md:w-6/12"
-            src="images/SandroPreface.svg"
-            alt="Sandro Imagem"
-          />
+          <div className="relative w-full h-full md:h-1/4 md:w-6/12">
+            <img
+              className="w-full h-full"
+              src="images/SandroPreface.svg"
+              alt="Sandro Imagem"
+            />
+            <div className="absolute inset-0 bg-gradient-to-b from-black to-transparent to-10%"></div>
+            <div className="absolute inset-0 bg-gradient-to-t from-black to-transparent to-10%"></div>
+            <div className="absolute inset-0 bg-gradient-to-l from-black to-transparent to-10%"></div>
+            <div className="absolute inset-0 bg-gradient-to-r from-black to-transparent to-10%"></div>
+          </div>
         </div>
         <p className="font-ArchivoBlack w-screen h-16 flex justify-center items-center text-white text-xl bg-black md:hidden">
           Prefácio de Sandro Magaldi

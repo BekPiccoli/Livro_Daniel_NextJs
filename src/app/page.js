@@ -6,10 +6,11 @@ import FirstContent from "@/components/content/FirstContent";
 import SecondContent from "@/components/content/SecondContent";
 import ThirdContent from "@/components/content/ThirdContent";
 import FourthContent from "@/components/content/FourthContent";
+import Script from "next/script";
 import { useRef, useEffect } from "react";
 import { NextSeo } from "next-seo";
 
-export default function Home() {
+export default function Home({ Component, pageProps }) {
   const jsonLdData = {
     "@context": "https://schema.org",
     "@type": "Book",
@@ -43,7 +44,7 @@ export default function Home() {
   };
 
   useEffect(() => {
-    document.title = "A Magia da Conversa | Daniel Regginato";
+    document.title = "A Magia da Conversa";
   }, []);
 
   const learnRef = useRef(null);
@@ -53,10 +54,33 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>A Magia da Conversa | Daniel Regginato</title>
+        <title>A Magia da Conversa</title>
         <NextSeo jsonLd={jsonLdData} />
+        <meta
+          name="google-site-verification"
+          content="aZDNHhgeOJAOVTwQHXiBfWEz8xDiXtGGcDUOSzI4Vfk"
+        />
       </Head>
-
+      {/* Google Analytics */}
+      <Script
+        strategy="afterInteractive"
+        src={`https://www.googletagmanager.com/gtag/js?id=G-LFDTD8G31Z`}
+      />
+      <Script
+        id="google-analytics"
+        strategy="afterInteractive"
+        dangerouslySetInnerHTML={{
+          __html: `
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-LFDTD8G31Z', {
+              page_path: window.location.pathname,
+            });
+          `,
+        }}
+      />
+      <Component {...pageProps} />
       <div className="">
         <Header
           learnRef={learnRef}

@@ -26,6 +26,7 @@ export default function FourthContent({ aboutRef }) {
             negócios em mais de 30 países.
           </p>
         </div>
+        <div></div>
         <img
           className=" p-0 m-0 h-full md:w-6/12 h-[500px]xl:w-[1000px] xl:h-full"
           src="images/Daniel.svg"
