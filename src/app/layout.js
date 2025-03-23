@@ -1,41 +1,40 @@
 import "./globals.css";
-import { NextSeo } from "next-seo";
-import Head from "next/head";
 
 export default function RootLayout({ children }) {
-  const jsonLdData = {
-    "@context": "https://schema.org",
-    "@type": "Book",
-    name: "A Magia da Conversa",
-    author: {
-      "@type": "Person",
-      name: "Daniel Reginatto",
-    },
-    image: ["https://a-magia-da-conversa.web.app/images/BookToLink.jpg"],
-    description:
-      "Livro que ensina estratégias para transfor simples interações em clientes fiéis. Transformar conversas em vendas",
-    abstract:
-      "Aprenda com Daniel Regginatto como usar automação, segmentação e persuasão para fechar mais vendas e crescer exponencialmente.",
-    genre: "",
-    accessMode: ["textual", "visual"],
-    accessModeSufficient: {
-      "@type": "ItemList",
-      itemListElement: ["textual", "visual", "textoEmVisual"],
-      description: "Text and images",
-    },
-    offers: {
-      "@type": "Offer",
-      priceCurrency: "BRL",
-    },
-    countryOfOrigin: {
-      "@type": "Country",
-      name: "Brazil",
-    },
-  };
   return (
     <html lang="PT-BR">
-      <Head>
-        <NextSeo jsonLd={jsonLdData} />
+      <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Book",
+              name: "A Magia da Conversa",
+              author: {
+                "@type": "Person",
+                name: "Daniel Reginatto",
+              },
+              image:
+                "https://a-magia-da-conversa.web.app/images/BookToLink.jpg",
+              description:
+                "Livro que ensina estratégias para transformar simples interações em clientes fiéis. Transformar conversas em vendas.",
+              abstract:
+                "Aprenda com Daniel Regginatto como usar automação, segmentação e persuasão para fechar mais vendas e crescer exponencialmente.",
+              accessMode: ["textual", "visual"],
+              accessModeSufficient: ["textual", "visual"],
+              offers: {
+                "@type": "Offer",
+                priceCurrency: "BRL",
+                price: "49.90",
+              },
+              countryOfOrigin: {
+                "@type": "Country",
+                name: "Brazil",
+              },
+            }),
+          }}
+        />
         <meta
           name="description"
           content="Livro que ensina estratégias para transformar simples interações em clientes fiéis."
@@ -57,11 +56,23 @@ export default function RootLayout({ children }) {
         />
         <meta
           property="og:image"
-          content="https://a-magia-da-conversa.web.app/images/BookToLink.jpg"
+          content="https://a-magia-da-conversa.web.app/images/Icon.jpg"
         />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
-      </Head>
+
+        {/* Twitter Cards (usado pelo WhatsApp) */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="A Magia da Conversa" />
+        <meta
+          name="twitter:description"
+          content="Aprenda com Daniel Regginatto como usar persuasão para fechar vendas e crescer exponencialmente."
+        />
+        <meta
+          name="twitter:image"
+          content="https://a-magia-da-conversa.web.app/images/Icon.jpg"
+        />
+      </head>
       <body className={""}>{children}</body>
     </html>
   );
