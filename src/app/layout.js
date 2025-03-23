@@ -26,7 +26,7 @@ export default function RootLayout({ children }) {
               offers: {
                 "@type": "Offer",
                 priceCurrency: "BRL",
-                price: "49.90",
+                price: "57.00",
               },
               countryOfOrigin: {
                 "@type": "Country",
@@ -58,8 +58,8 @@ export default function RootLayout({ children }) {
           property="og:image"
           content="https://a-magia-da-conversa.web.app/images/Icon.jpg"
         />
-        <meta property="og:image:width" content="1200" />
-        <meta property="og:image:height" content="630" />
+        <meta property="og:image:width" content="200" />
+        <meta property="og:image:height" content="200" />
 
         {/* Twitter Cards (usado pelo WhatsApp) */}
         <meta name="twitter:card" content="summary_large_image" />
