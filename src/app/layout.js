@@ -32,6 +32,15 @@ export default function RootLayout({ children }) {
                 "@type": "Country",
                 name: "Brazil",
               },
+              inLanguage: "pt-BR",
+              genre: ["Negócios", "Marketing", "Vendas"],
+              keywords:
+                "Livro, Conversas, Vendas, Marketing, Persuasão, Automação, Daniel Reginatto",
+              sameAs: [
+                "https://www.linkedin.com/in/danielreginatto/",
+                "https://www.instagram.com/daniel.reginatto/",
+                "https://www.facebook.com/daniel.reginatto/",
+              ],
             }),
           }}
         />
@@ -42,6 +51,26 @@ export default function RootLayout({ children }) {
         <meta
           name="google-site-verification"
           content="aZDNHhgeOJAOVTwQHXiBfWEz8xDiXtGGcDUOSzI4Vfk"
+        />
+        <meta
+          name="keywords"
+          content="Livro, Conversas, Vendas, Marketing, Persuasão, Automação, Daniel Reginatto"
+        />
+        <meta name="author" content="Daniel Reginatto" />
+        <meta
+          name="copyright"
+          content="© 2024 Daniel Reginatto. Todos os direitos reservados."
+        />
+        <meta name="robots" content="index, follow" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="theme-color" content="#000000" />
+        <meta
+          property="article:author"
+          content="https://www.facebook.com/daniel.reginatto/"
+        />
+        <meta
+          property="article:publisher"
+          content="https://www.facebook.com/daniel.reginatto/"
         />
         {/* Open Graph */}
         <meta property="og:type" content="website" />

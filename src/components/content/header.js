@@ -19,19 +19,19 @@ export default function Header({ learnRef, prefacioRef, aboutRef }) {
           <div className="flex items-baseline space-x-8 mr-28">
             <button
               onClick={() => scrollToSection(learnRef)}
-              className="font-Abel text-xl"
+              className="font-Abel text-xl relative text-black  after:absolute after:left-0 after:bottom-0 after:w-0 after:h-[2px] after:bg-black after:transition-all after:duration-500 hover:after:w-full"
             >
               O que você vai aprender?
             </button>
             <button
               onClick={() => scrollToSection(prefacioRef)}
-              className="font-Abel text-xl"
+              className="font-Abel text-xl relative text-black  after:absolute after:left-0 after:bottom-0 after:w-0 after:h-[2px] after:bg-black after:transition-all after:duration-500 hover:after:w-full"
             >
               Prefácio
             </button>
             <button
               onClick={() => scrollToSection(aboutRef)}
-              className="font-Abel text-xl"
+              className="font-Abel text-xl relative text-black  after:absolute after:left-0 after:bottom-0 after:w-0 after:h-[2px] after:bg-black after:transition-all after:duration-500 hover:after:w-full"
             >
               Sobre o autor
             </button>
