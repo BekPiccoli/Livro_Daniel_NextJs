@@ -16,7 +16,7 @@ export default function RootLayout({ children }) {
                 name: "Daniel Reginatto",
               },
               image:
-                "https://a-magia-da-conversa.web.app/images/BookToLink.jpg",
+                "https://a-magia-da-conversa.web.app/images/BookToLink.png",
               description:
                 "Livro que ensina estratégias para transformar simples interações em clientes fiéis. Transformar conversas em vendas.",
               abstract:
@@ -56,10 +56,8 @@ export default function RootLayout({ children }) {
         />
         <meta
           property="og:image"
-          content="https://a-magia-da-conversa.web.app/images/Icon.jpg"
+          content="https://a-magia-da-conversa.web.app/images/MainIcon.jpg"
         />
-        <meta property="og:image:width" content="200" />
-        <meta property="og:image:height" content="200" />
 
         {/* Twitter Cards (usado pelo WhatsApp) */}
         <meta name="twitter:card" content="summary_large_image" />
@@ -70,8 +68,9 @@ export default function RootLayout({ children }) {
         />
         <meta
           name="twitter:image"
-          content="https://a-magia-da-conversa.web.app/images/Icon.jpg"
+          content="https://a-magia-da-conversa.web.app/images/MainIcon.jpg"
         />
+        <meta property="fb:app_id" content="1086481679908327  " />
       </head>
       <body className={""}>{children}</body>
     </html>
