@@ -26,13 +26,13 @@ export default function FourthContent({ aboutRef }) {
             negócios em mais de 30 países.
           </p>
         </div>
-        <div className="relative md:w-6/12 h-[500px] xl:w-[1000px] xl:h-full">
+        <div className="relative md:w-6/12 h-[700px] xl:w-[1000px] xl:h-full">
           <img
             className="w-full h-full object-cover"
             src="images/Daniel.svg"
             alt="Daniel Imagem"
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-black to-transparent to-10%"></div>
+          <div className="absolute inset-0 bg-gradient-to-t from-black to-transparent to-5%"></div>
         </div>
       </section>
       <section className="m-0 md:flex md:flex-row-reverse md:w-screen md:bg-black">

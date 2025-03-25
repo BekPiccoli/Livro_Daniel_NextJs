@@ -80,7 +80,7 @@ export default function InputNameNumber() {
             if (!isFocused) setIsFocused(true);
           }}
           onBlur={() => setIsFocused(false)}
-          format="+ ## ( ## ) #####-#### "
+          format="+ ## (##) #####-####"
           mask="_"
           allowEmptyFormatting
           patternChar="#"
