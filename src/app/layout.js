@@ -4,6 +4,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="PT-BR">
       <head>
+        {/* Google Analytics */}
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
@@ -42,6 +43,25 @@ export default function RootLayout({ children }) {
                 "https://www.facebook.com/daniel.reginatto/",
               ],
             }),
+          }}
+        />
+        <script
+          strategy="afterInteractive"
+          src={`https://www.googletagmanager.com/gtag/js?id=G-7T4E6LR80N`}
+        />
+
+        <script
+          id="google-analytics"
+          strategy="afterInteractive"
+          dangerouslySetInnerHTML={{
+            __html: `
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-LFDTD8G31Z', {
+              page_path: window.location.pathname,
+            });
+          `,
           }}
         />
         <meta
