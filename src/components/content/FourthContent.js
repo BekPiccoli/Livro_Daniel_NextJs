@@ -6,7 +6,7 @@ export default function FourthContent({ aboutRef }) {
         ref={aboutRef}
         className="w-screen flex flex-col items-center justify-center bg-black md:flex md:flex-row"
       >
-        <div className="flex flex-col gap-8 h-5/6 mt-5 justify-center items-center md:w-6/12">
+        <div className="flex flex-col  gap-8 h-5/6 ml-8 mt-5 justify-center items-start md:w-6/12 ">
           <p className="font-ArchivoBlack text-4xl w-5/6 text-white xl:text-5xl">
             Sobre o autor
           </p>
@@ -26,7 +26,7 @@ export default function FourthContent({ aboutRef }) {
             negócios em mais de 30 países.
           </p>
         </div>
-        <div className="relative md:w-6/12 h-[700px] xl:w-[1000px] xl:h-full">
+        <div className="relative md:w-6/12 h-[700px] xl:w-[710px] xl:h-[800px]">
           <img
             className="w-full h-full object-cover"
             src="images/Daniel.svg"
@@ -36,7 +36,7 @@ export default function FourthContent({ aboutRef }) {
         </div>
       </section>
       <section className="m-0 md:flex md:flex-row-reverse md:w-screen md:bg-black">
-        <div className="w-screen h-40 flex flex-col items-center justify-center bg-black xl:m-15">
+        <div className="w-screen h-[200px] flex flex-col items-center justify-center bg-black xl:m-15">
           <p className="text-white font-ArchivoBlack ml-5 text-2xl">
             Siga Daniel nas redes sociais
           </p>

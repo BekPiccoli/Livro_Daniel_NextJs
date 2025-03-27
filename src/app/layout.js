@@ -4,6 +4,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="PT-BR">
       <head>
+        <title>A Magia da Conversa</title>
         {/* Google Analytics */}
         <script
           type="application/ld+json"
@@ -120,6 +121,7 @@ export default function RootLayout({ children }) {
           content="https://a-magia-da-conversa.web.app/images/MainIcon.jpg"
         />
         <meta property="fb:app_id" content="1086481679908327  " />
+        <link rel="manifest" href="/manifest.json" />
       </head>
       <body className={""}>{children}</body>
     </html>
