@@ -6,7 +6,6 @@ import FirstContent from "@/components/content/FirstContent";
 import SecondContent from "@/components/content/SecondContent";
 import ThirdContent from "@/components/content/ThirdContent";
 import FourthContent from "@/components/content/FourthContent";
-import Script from "next/script";
 import { useRef, useEffect } from "react";
 
 export default function Home() {
