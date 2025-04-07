@@ -18,8 +18,8 @@ export default function SecondContent({ learnRef }) {
           <div className="h-[290px] w-[170px] flex flex-col items-center m-2 rounded-xl border-2 border-[#FFEC5C] bg-black xl:h-[330px] xl:w-[230]">
             <div className="flex items-center justify-start  h-[80px] w-[160px] md:h-[140px]">
               <img
-                className="ml-2 w- md:w-12 xl:w-16"
-                src="/images/Vector.svg"
+                className="ml-2 w-10 md:w-12 xl:w-16"
+                src="/images/Vector.webp"
                 alt="Vector"
               />
             </div>
@@ -36,9 +36,9 @@ export default function SecondContent({ learnRef }) {
           <div className="h-[290px] w-[170px] flex flex-col items-center m-2 rounded-xl border-2 border-[#FFEC5C] bg-black xl:h-[330px] xl:w-[230]">
             <div className="flex items-center justify-start  h-[80px] w-[160px] md:h-[140px]">
               <img
-                className="ml-2 w-8 md:w-12 xl:w-16"
-                src="/images/X.svg"
-                alt="X "
+                className="ml-2 w-10 md:w-12 xl:w-16"
+                src="/images/X.webp"
+                alt="X"
               />
             </div>
             <div className=" flex flex-col h-48 w-9/12">
@@ -52,10 +52,10 @@ export default function SecondContent({ learnRef }) {
             </div>
           </div>
           <div className="h-[290px] w-[170px] flex flex-col items-center m-2 rounded-xl border-2 border-[#FFEC5C] bg-black xl:h-[330px] xl:w-[230]">
-            <div className="flex items-center justify-start  h-[80px] w-[160px] md:h-[140px]">
+            <div className="flex items-center justify-start h-[80px] w-[160px] md:h-[140px] md:w-[160px]">
               <img
-                className="ml-2 md:w-12 xl:w-16"
-                src="/images/Coment.svg"
+                className="ml-2 w-10 md:w-12 xl:w-16"
+                src="/images/Coment.webp"
                 alt="Coment"
               />
             </div>
@@ -72,8 +72,8 @@ export default function SecondContent({ learnRef }) {
           <div className="h-[290px] w-[170px] flex flex-col items-center m-2 rounded-xl border-2 border-[#FFEC5C] bg-black xl:h-[330px] xl:w-[230]">
             <div className="flex items-center justify-start  h-[80px] w-[160px] xl:h-[140px]">
               <img
-                className="ml-2 2-8 md:w-12 xl:w-16"
-                src="/images/FlashLigth.svg"
+                className="ml-2 w-10 md:w-12 xl:w-16"
+                src="/images/FlashLigth.webp"
                 alt="FlashLigth"
               />
             </div>
@@ -91,7 +91,7 @@ export default function SecondContent({ learnRef }) {
             <div className="flex items-center justify-start  h-[80px] w-[160px] md:h-[160px]">
               <img
                 className="ml-2 w-6 md:w-8 xl:w-12"
-                src="/images/Phone.svg"
+                src="/images/Phone.webp"
                 alt="Phone"
               />
             </div>

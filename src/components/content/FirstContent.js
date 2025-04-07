@@ -27,16 +27,18 @@ export default function FirstContent() {
           </button>
         </div>
         <img
-          src="/images/Book.svg"
+          loading="lazy"
+          src="/images/Book.webp"
           alt="Descrição da imagem"
           className="md:w-5/12 md:mt-10 xl:w-4/12"
         />
       </section>
       <section className="pt-10 bg-[#EFD7A2] xl:bg-gradient-to-r from-[#EFD7A2] to-[#D0B463]  xl:flex ">
         <img
-          src="/images/SecondBook.svg"
+          loading="lazy"
+          src="/images/SecondBook.webp"
           alt="Descrição da imagem"
-          className="w-9/12 m-10 hidden xl:block "
+          className="w-5/12 h-[600px] m-10 hidden xl:block "
         />
         <div className="flex flex-col w-screen items-center">
           <p className="flex font-ArchivoBlack w-4/5  text-4xl xl:text-5xl">

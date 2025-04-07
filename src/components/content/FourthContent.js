@@ -29,7 +29,7 @@ export default function FourthContent({ aboutRef }) {
         <div className="relative md:w-6/12 h-[700px] xl:w-[710px] xl:h-[800px]">
           <img
             className="w-full h-full object-cover"
-            src="images/Daniel.svg"
+            src="images/Daniel.webp"
             alt="Daniel Imagem"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-black to-transparent to-5%"></div>
@@ -46,15 +46,15 @@ export default function FourthContent({ aboutRef }) {
               target="_blank"
             >
               <img
-                className="cursor-pointer"
-                src="images/linkedin.svg"
+                className="cursor-pointer w-[50px] h-[50px]"
+                src="images/linkedin.webp"
                 alt="Linkedin"
               />
             </a>
             <a>
               <img
-                className="cursor-pointer"
-                src="images/whats.svg"
+                className="cursor-pointer w-[50px] h-[50px]"
+                src="images/whats.webp"
                 alt="WhatsApp"
               />
             </a>
@@ -64,8 +64,8 @@ export default function FourthContent({ aboutRef }) {
               target="_blank"
             >
               <img
-                className="cursor-pointer"
-                src="images/instagram.svg"
+                className="cursor-pointer w-[50px] h-[50px]"
+                src="images/instagram.webp"
                 alt="instagram"
               />
             </a>
@@ -75,8 +75,8 @@ export default function FourthContent({ aboutRef }) {
               target="_blank"
             >
               <img
-                className="cursor-pointer"
-                src="images/Facebook.svg"
+                className="cursor-pointer w-[50px] h-[50px]"
+                src="images/Facebook.webp"
                 alt="Facebook"
               />
             </a>

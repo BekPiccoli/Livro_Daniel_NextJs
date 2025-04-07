@@ -35,8 +35,9 @@ export default function ThirdContent({ prefacioRef }) {
           </div>
           <div className="relative w-full h-full md:h-1/4 md:w-6/12">
             <img
+              loading="lazy"
               className="w-full h-full"
-              src="images/SandroPreface.svg"
+              src="images/SandroPreface.webp"
               alt="Sandro Imagem"
             />
             <div className="absolute inset-0 bg-gradient-to-b from-black to-transparent to-10%"></div>

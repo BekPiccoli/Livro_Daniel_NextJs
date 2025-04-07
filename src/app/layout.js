@@ -7,6 +7,7 @@ export default function RootLayout({ children }) {
         <title>A Magia da Conversa</title>
         {/* Google Analytics */}
         <script
+          defer
           type="application/ld+json"
           dangerouslySetInnerHTML={{
             __html: JSON.stringify({
@@ -17,8 +18,7 @@ export default function RootLayout({ children }) {
                 "@type": "Person",
                 name: "Daniel Reginatto",
               },
-              image:
-                "https://a-magia-da-conversa.web.app/images/BookToLink.png",
+              image: "https://a-magia-da-conversa.web.app/images/Book.webp",
               description:
                 "Livro que ensina estratégias para transformar simples interações em clientes fiéis. Transformar conversas em vendas.",
               abstract:
@@ -47,11 +47,13 @@ export default function RootLayout({ children }) {
           }}
         />
         <script
+          defer
           strategy="afterInteractive"
           src={`https://www.googletagmanager.com/gtag/js?id=G-7T4E6LR80N`}
         />
 
         <script
+          defer
           id="google-analytics"
           strategy="afterInteractive"
           dangerouslySetInnerHTML={{
@@ -122,6 +124,20 @@ export default function RootLayout({ children }) {
         />
         <meta property="fb:app_id" content="1086481679908327  " />
         <link rel="manifest" href="/manifest.json" />
+        <link
+          rel="preload"
+          href="/fonts/ArchivoBlack-Regular.woff2"
+          as="font"
+          type="font/woff2"
+          crossOrigin="anonymous"
+        />
+        <link
+          rel="preload"
+          href="/fonts/Abel-Regular.woff2"
+          as="font"
+          type="font/woff2"
+          crossOrigin="anonymous"
+        />
       </head>
       <body className={""}>{children}</body>
     </html>
