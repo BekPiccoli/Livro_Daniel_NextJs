@@ -48,14 +48,12 @@ export default function RootLayout({ children }) {
         />
         <script
           defer
-          strategy="afterInteractive"
           src={`https://www.googletagmanager.com/gtag/js?id=G-7T4E6LR80N`}
         />
 
         <script
           defer
           id="google-analytics"
-          strategy="afterInteractive"
           dangerouslySetInnerHTML={{
             __html: `
             window.dataLayer = window.dataLayer || [];

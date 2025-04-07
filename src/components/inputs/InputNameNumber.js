@@ -62,7 +62,6 @@ export default function InputNameNumber() {
   return (
     <form
       onSubmit={handlesubmit}
-      action=""
       className="flex flex-col justify-center items-center  gap-3 h-2/3 w-2/3 "
     >
       <label className="flex flex-col justify-center items-center  gap-3 w-full h-full bg-">

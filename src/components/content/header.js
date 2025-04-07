@@ -2,7 +2,8 @@
 import { useState } from "react";
 import MenuIcon from "@/components/icons/Menu.js";
 import CloseIcon from "@/components/icons/Close.js";
-
+import archivoBlack from "@/fontes/ArchivoBlack.js";
+import abel from "@/fontes/Abel.js";
 export default function Header({ learnRef, prefacioRef, aboutRef }) {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -19,23 +20,25 @@ export default function Header({ learnRef, prefacioRef, aboutRef }) {
           <div className="flex items-baseline space-x-8 mr-28">
             <button
               onClick={() => scrollToSection(learnRef)}
-              className="font-Abel text-xl relative text-black  after:absolute after:left-0 after:bottom-0 after:w-0 after:h-[2px] after:bg-black after:transition-all after:duration-500 hover:after:w-full"
+              className={`${abel.className} text-xl relative text-black  after:absolute after:left-0 after:bottom-0 after:w-0 after:h-[2px] after:bg-black after:transition-all after:duration-500 hover:after:w-full`}
             >
               O que você vai aprender?
             </button>
             <button
               onClick={() => scrollToSection(prefacioRef)}
-              className="font-Abel text-xl relative text-black  after:absolute after:left-0 after:bottom-0 after:w-0 after:h-[2px] after:bg-black after:transition-all after:duration-500 hover:after:w-full"
+              className={`${abel.className} text-xl relative text-black  after:absolute after:left-0 after:bottom-0 after:w-0 after:h-[2px] after:bg-black after:transition-all after:duration-500 hover:after:w-full`}
             >
               Prefácio
             </button>
             <button
               onClick={() => scrollToSection(aboutRef)}
-              className="font-Abel text-xl relative text-black  after:absolute after:left-0 after:bottom-0 after:w-0 after:h-[2px] after:bg-black after:transition-all after:duration-500 hover:after:w-full"
+              className={`${abel.className} text-xl relative text-black  after:absolute after:left-0 after:bottom-0 after:w-0 after:h-[2px] after:bg-black after:transition-all after:duration-500 hover:after:w-full`}
             >
               Sobre o autor
             </button>
-            <button className="font-ArchivoBlack  bg-[#FFEC5C] rounded-xl text-lg pt-2 pb-2 pl-6 pr-6 shadow-xl hover:bg-white transition-all ease-in duration-200">
+            <button
+              className={`${archivoBlack.className}  bg-[#FFEC5C] rounded-xl text-lg pt-2 pb-2 pl-6 pr-6 shadow-xl hover:bg-white transition-all ease-in duration-200`}
+            >
               comprar
             </button>
           </div>
@@ -60,19 +63,19 @@ export default function Header({ learnRef, prefacioRef, aboutRef }) {
           >
             <li
               onClick={() => scrollToSection(learnRef)}
-              className="text-white text-xl font-Abel hover:text-yellow-20 hover:text-2xl  hover:duration-300 ease-in-out"
+              className={`text-white text-xl ${abel.className} hover:text-yellow-20 hover:text-2xl  hover:duration-300 ease-in-out`}
             >
               O que você vai aprender?
             </li>
             <li
               onClick={() => scrollToSection(prefacioRef)}
-              className="text-white text-xl font-Abel hover:text-yellow-20 hover:text-2xl  hover:duration-300 ease-in-out "
+              className={`text-white text-xl ${abel.className} hover:text-yellow-20 hover:text-2xl  hover:duration-300 ease-in-out`}
             >
               Prefácio
             </li>
             <li
               onClick={() => scrollToSection(aboutRef)}
-              className="text-white text-xl font-Abel hover:text-yellow-20 hover:text-2xl  hover:duration-300 ease-in-out"
+              className={`text-white text-xl ${abel.className} hover:text-yellow-20 hover:text-2xl  hover:duration-300 ease-in-out`}
             >
               Sobre o autor
             </li>
