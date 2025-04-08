@@ -7,7 +7,6 @@ export default function RootLayout({ children }) {
         <title>A Magia da Conversa</title>
         {/* Google Analytics */}
         <script
-          defer
           type="application/ld+json"
           dangerouslySetInnerHTML={{
             __html: JSON.stringify({
@@ -47,12 +46,12 @@ export default function RootLayout({ children }) {
           }}
         />
         <script
-          defer
+          strategy="afterInteractive"
           src={`https://www.googletagmanager.com/gtag/js?id=G-7T4E6LR80N`}
         />
 
         <script
-          defer
+          strategy="afterInteractive"
           id="google-analytics"
           dangerouslySetInnerHTML={{
             __html: `
@@ -82,6 +81,7 @@ export default function RootLayout({ children }) {
           name="copyright"
           content="© 2024 Daniel Reginatto. Todos os direitos reservados."
         />
+        <link rel="canonical" href="https://a-magia-da-conversa.web.app/" />
         <meta name="robots" content="index, follow" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="theme-color" content="#000000" />

@@ -1,6 +1,6 @@
 import Image from "next/image";
-import Book from "@/img/Book.webp";
-import SecondBook from "@/img/SecondBook.webp";
+import Book from "@/../public/images/BookOptimized.webp";
+import SecondBook from "@/../public/images/SecondBookOptimized.webp";
 import archivoBlack from "@/fontes/ArchivoBlack.js";
 import abel from "@/fontes/Abel.js";
 export default function FirstContent() {
@@ -42,6 +42,8 @@ export default function FirstContent() {
           src={Book}
           alt="Foto do livro 'A Magia da Conversa' visto de frente."
           className="md:w-5/12 md:mt-10 xl:w-4/12"
+          width={490}
+          height={485}
         />
       </div>
       <div className="pt-10 bg-[#EFD7A2] xl:bg-gradient-to-r from-[#EFD7A2] to-[#D0B463]  xl:flex ">
@@ -50,6 +52,8 @@ export default function FirstContent() {
           src={SecondBook}
           alt="Foto do livro 'A Magia da Conversa' deitado."
           className="w-5/12 h-[600px] m-10 hidden xl:block "
+          width={743}
+          height={485}
         />
         <div className="flex flex-col w-screen items-center">
           <p

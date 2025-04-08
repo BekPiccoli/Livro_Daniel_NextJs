@@ -1,9 +1,9 @@
 import Image from "next/image";
-import Vector from "@/img/Vector.webp";
-import X from "@/img/X.webp";
-import Coment from "@/img/Coment.webp";
-import FlashLigth from "@/img/FlashLigth.webp";
-import Phone from "@/img/Phone.webp";
+import Vector from "@/../public/images/Vector.webp";
+import X from "@/../public/images/X.webp";
+import Coment from "@/../public/images/Coment.webp";
+import FlashLigth from "@/../public/images/FlashLigth.webp";
+import Phone from "@/../public/images/Phone.webp";
 import archivoBlack from "@/fontes/ArchivoBlack.js";
 import abel from "@/fontes/Abel.js";
 export default function SecondContent({ learnRef }) {
@@ -54,13 +54,13 @@ export default function SecondContent({ learnRef }) {
               />
             </div>
             <div className=" flex flex-col h-48 w-9/12">
-              <a className={`text-white ${archivoBlack.className}`}>
+              <p className={`text-white ${archivoBlack.className}`}>
                 Erros que Você Deve Evitar
-              </a>
-              <a className={`text-white ${abel.className}`}>
+              </p>
+              <p className={`text-white ${abel.className}`}>
                 Evite os deslizes mais comuns que fazem potenciais clientes
                 desistirem da compra.
-              </a>
+              </p>
             </div>
           </div>
           <div className="h-[290px] w-[170px] flex flex-col items-center m-2 rounded-xl border-2 border-[#FFEC5C] bg-black xl:h-[330px] xl:w-[230]">
@@ -69,8 +69,8 @@ export default function SecondContent({ learnRef }) {
                 className="ml-2 w-10 md:w-12 xl:w-16"
                 src={Coment}
                 alt="Balão de fala"
-                width={64}
-                height={64}
+                width={60}
+                height={60}
               />
             </div>
             <div className=" flex flex-col w-10/12">
@@ -89,8 +89,8 @@ export default function SecondContent({ learnRef }) {
                 className="ml-2 w-10 md:w-12 xl:w-16"
                 src={FlashLigth}
                 alt="Lanterna"
-                width={64}
-                height={64}
+                width={60}
+                height={60}
               />
             </div>
             <div className=" flex flex-col w-9/12 mt-3">

@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://a-magia-da-conversa.web.app
+
+# Sitemaps
+Sitemap: https://a-magia-da-conversa.web.app/sitemap.xml

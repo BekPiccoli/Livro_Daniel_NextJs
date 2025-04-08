@@ -1,11 +1,10 @@
 import InputNameNumber from "@/components/inputs/InputNameNumber";
 import Image from "next/image";
-import Daneil from "@/img/Daniel.webp";
-import Linkedin from "@/img/linkedin.webp";
-import Email from "@/img/email.webp";
-import Facebook from "@/img/Facebook.webp";
-import Instagram from "@/img/instagram.webp";
-import WhatsApp from "@/img/whats.webp";
+import Daniel from "@/../public/images/DanielOptimized.webp";
+import Linkedin from "@/../public/images/linkedin.webp";
+import Facebook from "@/../public/images/Facebook.webp";
+import Instagram from "@/../public/images/instagram.webp";
+import WhatsApp from "@/../public/images/whats.webp";
 import archivoBlack from "@/fontes/ArchivoBlack.js";
 import abel from "@/fontes/Abel.js";
 export default function FourthContent({ aboutRef }) {
@@ -46,8 +45,10 @@ export default function FourthContent({ aboutRef }) {
         <div className="relative md:w-6/12 h-[700px] xl:w-[710px] xl:h-[800px]">
           <Image
             className="w-full h-full object-cover"
-            src={Daneil}
+            src={Daniel}
             alt="Imagem de Daniel Reginatto"
+            width={710}
+            height={800}
           />
           <div className="absolute inset-0 bg-gradient-to-t from-black to-transparent to-5%"></div>
         </div>
@@ -70,7 +71,10 @@ export default function FourthContent({ aboutRef }) {
                 height={64}
               />
             </a>
-            <a>
+            <a
+              href="https://www.linkedin.com/in/danielreginatto/"
+              target="_blank"
+            >
               <Image
                 className="cursor-pointer w-[50px] h-[50px]"
                 src={WhatsApp}

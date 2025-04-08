@@ -1,5 +1,6 @@
 import Image from "next/image";
-import SandroPreface from "@/img/SandroPreface.webp";
+// import SandroPreface from "@/../public/images/SandroPrefaceOptimized.webp";
+import sandroPref from "@/../public/images/SandroPreface.webp";
 import archivoBlack from "@/fontes/ArchivoBlack.js";
 import abel from "@/fontes/Abel.js";
 export default function ThirdContent({ prefacioRef }) {
@@ -48,10 +49,11 @@ export default function ThirdContent({ prefacioRef }) {
           <div className="relative w-full h-full md:h-1/4 md:w-6/12">
             <Image
               className="w-full h-full"
-              src={SandroPreface}
+              src={sandroPref}
               alt="Imagem de Sandro"
-              width={800}
-              height={100}
+              width={600}
+              height={400}
+              // style={{ width: "100%", height: "auto" }}
             />
             <div className="absolute inset-0 bg-gradient-to-b from-black to-transparent to-10%"></div>
             <div className="absolute inset-0 bg-gradient-to-t from-black to-transparent to-10%"></div>
@@ -67,16 +69,16 @@ export default function ThirdContent({ prefacioRef }) {
       </div>
       <div className="w-screen flex flex-col">
         <div className="flex flex-col h-40 p-8 justify-center items-start md:flex-row md:justify-center ">
-          <a
+          <p
             className={`${archivoBlack.className} text-3xl text-black md:text-4xl xl:text-4xl`}
           >
             Garanta Seu
-          </a>
-          <a
+          </p>
+          <p
             className={`${archivoBlack.className} text-3xl text-black md:text-4xl md:ml-3 xl:text-4xl`}
           >
             Exemplar Agora
-          </a>
+          </p>
         </div>
         <div className="bg-white flex h-[500px] items-start justify-evenly">
           <div className="bg-black items-center justify-center h-[400px] w-[180px] rounded-3xl shadow-2xl md:w-[350px] xl:w-[400px]">
