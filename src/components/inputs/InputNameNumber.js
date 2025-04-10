@@ -66,7 +66,7 @@ export default function InputNameNumber() {
     >
       <label className="flex flex-col justify-center items-center  gap-3 w-full h-full bg-">
         <input
-          className="rounded-lg w-5/6 h-10 placeholder:text-gray-400 px-4"
+          className="rounded-lg w-5/6 h-10 placeholder:text-gray-500 px-4"
           placeholder="Nome"
           type="text"
           name="Nome"
@@ -85,7 +85,7 @@ export default function InputNameNumber() {
           patternChar="#"
           type="tel"
           className={`rounded-lg w-5/6 h-10 px-4 placeholder: ${
-            isFocused ? "text-black" : "text-gray-400"
+            isFocused ? "text-black" : "text-gray-500"
           }`}
           onChange={(e) => setPhoneNumber(e.target.value)}
           value={phoneNumber}

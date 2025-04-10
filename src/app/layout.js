@@ -17,7 +17,8 @@ export default function RootLayout({ children }) {
                 "@type": "Person",
                 name: "Daniel Reginatto",
               },
-              image: "https://a-magia-da-conversa.web.app/images/Book.webp",
+              image:
+                "https://a-magia-da-conversa.web.app/images/BookOptimized.webp",
               description:
                 "Livro que ensina estratégias para transformar simples interações em clientes fiéis. Transformar conversas em vendas.",
               abstract:
@@ -36,7 +37,7 @@ export default function RootLayout({ children }) {
               inLanguage: "pt-BR",
               genre: ["Negócios", "Marketing", "Vendas"],
               keywords:
-                "Livro, Conversas, Vendas, Marketing, Persuasão, Automação, Daniel Reginatto",
+                "Livro, Conversas, Magia, Comunicação, Liderança, Vendas, Marketing, Persuasão, Automação, Daniel, Daniel Reginatto, Redrive",
               sameAs: [
                 "https://www.linkedin.com/in/danielreginatto/",
                 "https://www.instagram.com/daniel.reginatto/",
@@ -74,7 +75,7 @@ export default function RootLayout({ children }) {
         />
         <meta
           name="keywords"
-          content="Livro, Conversas, Vendas, Marketing, Persuasão, Automação, Daniel Reginatto"
+          content="Livro, Conversas, Magia, Comunicação, Liderança, Vendas, Marketing, Persuasão, Automação, Daniel, Daniel Reginatto, Redrive"
         />
         <meta name="author" content="Daniel Reginatto" />
         <meta
