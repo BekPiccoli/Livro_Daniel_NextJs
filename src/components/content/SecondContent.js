@@ -9,7 +9,7 @@ import abel from "@/fontes/Abel.js";
 export default function SecondContent({ learnRef }) {
   return (
     <>
-      <section className=" w-screen  bg-black ">
+      <div className=" w-screen  bg-black ">
         <div className="flex flex-col h-24 justify-center items-center  md:flex-row md:justify-center ">
           <p
             ref={learnRef}
@@ -131,7 +131,7 @@ export default function SecondContent({ learnRef }) {
             Garanta seu exemplar!
           </button>
         </div>
-      </section>
+      </div>
     </>
   );
 }

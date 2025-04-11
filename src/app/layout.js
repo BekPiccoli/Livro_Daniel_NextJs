@@ -18,8 +18,7 @@ export default function RootLayout({ children }) {
                 "@type": "Person",
                 name: "Daniel Reginatto",
               },
-              image:
-                "https://a-magia-da-conversa.web.app/images/BookOptimized.webp",
+              image: "https://a-magia-da-conversa.web.app/images/MAIN.png",
               description:
                 "Livro que ensina estratégias para transformar simples interações em clientes fiéis. Transformar conversas em vendas.",
               abstract:

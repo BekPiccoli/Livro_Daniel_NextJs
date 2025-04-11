@@ -7,29 +7,21 @@ export default function FirstContent() {
   return (
     <>
       <div className="bg-[#EFD7A2] flex flex-col items-center md:flex md:justify-evenly md:flex-row pb-10 ">
-        <div className=" flex flex-col pb-8  w-10/12 md:w-5/12 md:justify-center md:items-start ml-18">
+        <div className=" flex flex-col pb-8 w-10/12 md:w-5/12 md:justify-center md:items-start mx-8">
           <h1
             className={`flex ${archivoBlack.className} w-full text-5xl xl:text-6xl`}
           >
-            A Magia da Conversa
-            <br />
-            Conecte-se, Influencie
-            <br />e venda
+            A Magia da Conversa Conecte-se, Influencie e venda
           </h1>
           <h2
             className={`flex ${abel.className} w-full text-4xl mt-5 md:text-4xl xl:text-4xl`}
           >
-            Descubra as estratégias que
-            <br />
-            transformam simples
-            <br /> interações em clientes fiéis.
+            Descubra as estratégias que transformam simples interações em
+            clientes fiéis.
           </h2>
           <p className={`${abel.className} w-full text-xl mt-5`}>
-            Aprenda com Daniel Regginatto como usar
-            <br />
-            automação, segmentação e persuasão para
-            <br />
-            fechar mais vendas e crescer exponencialmente.
+            Aprenda com Daniel Regginatto como usar automação, segmentação e
+            persuasão para fechar mais vendas e crescer exponencialmente.
           </p>
           <button
             className={`${archivoBlack.className}  bg-[#FFEC5C] text-xl rounded-xl mb-10 mt-10 pt-4 pb-4 pl-10 pr-10 shadow-xl hidden md:block hover:bg-white transition-all ease-in duration-200`}
@@ -42,8 +34,8 @@ export default function FirstContent() {
           src={Book}
           alt="Foto do livro 'A Magia da Conversa' visto de frente."
           className="md:w-5/12 md:mt-10 xl:w-4/12"
-          width={490}
-          height={485}
+          width={430}
+          height={400}
         />
       </div>
       <div className="pt-10 bg-[#EFD7A2] xl:bg-gradient-to-r from-[#EFD7A2] to-[#D0B463]  xl:flex ">
@@ -52,8 +44,9 @@ export default function FirstContent() {
           src={SecondBook}
           alt="Foto do livro 'A Magia da Conversa' deitado."
           className="w-5/12 h-[600px] m-10 hidden xl:block "
-          width={743}
-          height={485}
+          width={610}
+          height={600}
+          sizes="(max-width: 2100px) 90vw, 610px"
         />
         <div className="flex flex-col w-screen items-center">
           <h1

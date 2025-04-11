@@ -10,7 +10,7 @@ import abel from "@/fontes/Abel.js";
 export default function FourthContent({ aboutRef }) {
   return (
     <>
-      <section
+      <div
         ref={aboutRef}
         className="w-screen flex flex-col items-center justify-center bg-black md:flex md:flex-row"
       >
@@ -52,8 +52,8 @@ export default function FourthContent({ aboutRef }) {
           />
           <div className="absolute inset-0 bg-gradient-to-t from-black to-transparent to-5%"></div>
         </div>
-      </section>
-      <section className="m-0 md:flex md:flex-row-reverse md:w-screen md:bg-black">
+      </div>
+      <div className="m-0 md:flex md:flex-row-reverse md:w-screen md:bg-black">
         <div className="w-screen h-[200px] flex flex-col items-center justify-center bg-black xl:m-15">
           <p className={`text-white ${archivoBlack.className} ml-5 text-2xl`}>
             Siga Daniel nas redes sociais
@@ -119,7 +119,7 @@ export default function FourthContent({ aboutRef }) {
           </div>
           <InputNameNumber />
         </div>
-      </section>
+      </div>
     </>
   );
 }

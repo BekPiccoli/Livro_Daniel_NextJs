@@ -47,6 +47,7 @@ export default function Header({ learnRef, prefacioRef, aboutRef }) {
         <button
           onClick={() => setIsMenuOpen(!isMenuOpen)}
           className="pr-4  top-4 right-4 z-50 md:hidden"
+          aria-label="Abrir menu"
         >
           {isMenuOpen ? <CloseIcon /> : <MenuIcon />}
         </button>
@@ -57,29 +58,35 @@ export default function Header({ learnRef, prefacioRef, aboutRef }) {
               : "opacity-0 -translate-y-full"
           } md:hidden`}
         >
-          <ul
+          <div
             role="menu"
             className=" space-y-12 md:hidden w-full h-2/3 flex flex-col items-center justify-center"
           >
-            <li
+            <div
+              role="menuitem"
+              tabIndex={0}
               onClick={() => scrollToSection(learnRef)}
               className={`text-white text-xl ${abel.className} hover:text-yellow-20 hover:text-2xl  hover:duration-300 ease-in-out`}
             >
               O que você vai aprender?
-            </li>
-            <li
+            </div>
+            <div
+              role="menuitem"
+              tabIndex={0}
               onClick={() => scrollToSection(prefacioRef)}
               className={`text-white text-xl ${abel.className} hover:text-yellow-20 hover:text-2xl  hover:duration-300 ease-in-out`}
             >
               Prefácio
-            </li>
-            <li
+            </div>
+            <div
+              role="menuitem"
+              tabIndex={0}
               onClick={() => scrollToSection(aboutRef)}
               className={`text-white text-xl ${abel.className} hover:text-yellow-20 hover:text-2xl  hover:duration-300 ease-in-out`}
             >
               Sobre o autor
-            </li>
-          </ul>
+            </div>
+          </div>
         </div>
       </header>
     </>

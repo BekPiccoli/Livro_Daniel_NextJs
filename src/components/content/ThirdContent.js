@@ -50,8 +50,10 @@ export default function ThirdContent({ prefacioRef }) {
               className="w-full h-full"
               src={sandroPref}
               alt="Imagem de Sandro"
-              width={600}
-              height={400}
+              width={340}
+              height={200}
+              sizes="(max-width: 768px) 90vw, 340px"
+              style={{ width: "100%", height: "auto" }}
             />
             <div className="absolute inset-0 bg-gradient-to-b from-black to-transparent to-10%"></div>
             <div className="absolute inset-0 bg-gradient-to-t from-black to-transparent to-10%"></div>
