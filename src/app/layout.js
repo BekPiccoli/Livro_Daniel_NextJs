@@ -1,11 +1,12 @@
 import "./globals.css";
-
 export default function RootLayout({ children }) {
   return (
     <html lang="PT-BR">
       <head>
-        <title>A Magia da Conversa</title>
-        {/* Google Analytics */}
+        <title>
+          A Magia da Conversa | O livro que Transforma Conversas em Vendas de
+          Sucesso.
+        </title>
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
@@ -46,25 +47,7 @@ export default function RootLayout({ children }) {
             }),
           }}
         />
-        <script
-          strategy="afterInteractive"
-          src={`https://www.googletagmanager.com/gtag/js?id=G-7T4E6LR80N`}
-        />
 
-        <script
-          strategy="afterInteractive"
-          id="google-analytics"
-          dangerouslySetInnerHTML={{
-            __html: `
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', 'G-LFDTD8G31Z', {
-              page_path: window.location.pathname,
-            });
-          `,
-          }}
-        />
         <meta
           name="description"
           content="Livro que ensina estratégias para transformar simples interações em clientes fiéis."
@@ -94,7 +77,6 @@ export default function RootLayout({ children }) {
           property="article:publisher"
           content="https://www.facebook.com/daniel.reginatto/"
         />
-        {/* Open Graph */}
         <meta property="og:type" content="website" />
         <meta
           property="og:url"
@@ -109,8 +91,6 @@ export default function RootLayout({ children }) {
           property="og:image"
           content="https://a-magia-da-conversa.web.app/images/MainIcon.jpg"
         />
-
-        {/* Twitter Cards (usado pelo WhatsApp) */}
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="A Magia da Conversa" />
         <meta
@@ -138,7 +118,7 @@ export default function RootLayout({ children }) {
           crossOrigin="anonymous"
         />
       </head>
-      <body className={""}>{children}</body>
+      <body>{children}</body>
     </html>
   );
 }

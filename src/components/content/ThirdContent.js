@@ -1,5 +1,4 @@
 import Image from "next/image";
-// import SandroPreface from "@/../public/images/SandroPrefaceOptimized.webp";
 import sandroPref from "@/../public/images/SandroPreface.webp";
 import archivoBlack from "@/fontes/ArchivoBlack.js";
 import abel from "@/fontes/Abel.js";
@@ -53,7 +52,6 @@ export default function ThirdContent({ prefacioRef }) {
               alt="Imagem de Sandro"
               width={600}
               height={400}
-              // style={{ width: "100%", height: "auto" }}
             />
             <div className="absolute inset-0 bg-gradient-to-b from-black to-transparent to-10%"></div>
             <div className="absolute inset-0 bg-gradient-to-t from-black to-transparent to-10%"></div>

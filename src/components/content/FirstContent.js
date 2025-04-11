@@ -8,22 +8,22 @@ export default function FirstContent() {
     <>
       <div className="bg-[#EFD7A2] flex flex-col items-center md:flex md:justify-evenly md:flex-row pb-10 ">
         <div className=" flex flex-col pb-8  w-10/12 md:w-5/12 md:justify-center md:items-start ml-18">
-          <p
+          <h1
             className={`flex ${archivoBlack.className} w-full text-5xl xl:text-6xl`}
           >
             A Magia da Conversa
             <br />
             Conecte-se, Influencie
             <br />e venda
-          </p>
-          <p
+          </h1>
+          <h2
             className={`flex ${abel.className} w-full text-4xl mt-5 md:text-4xl xl:text-4xl`}
           >
             Descubra as estratégias que
             <br />
             transformam simples
             <br /> interações em clientes fiéis.
-          </p>
+          </h2>
           <p className={`${abel.className} w-full text-xl mt-5`}>
             Aprenda com Daniel Regginatto como usar
             <br />
@@ -56,16 +56,16 @@ export default function FirstContent() {
           height={485}
         />
         <div className="flex flex-col w-screen items-center">
-          <p
+          <h1
             className={`flex ${archivoBlack.className} w-4/5  text-4xl xl:text-5xl`}
           >
             O livro que Transforma Conversas em Vendas de sucesso
-          </p>
+          </h1>
           <p
             className={`flex ${abel.className} w-4/5  text-lg mt-5 md:text-3xl`}
           >
             Em um mercado cada vez mais competitivo, a forma como você se
-            comunica pode ser o diferencial entre o sucesso e a estagnação.{" "}
+            comunica pode ser o diferencial entre o sucesso e a estagnação.
           </p>
           <p
             className={`flex ${abel.className} w-4/5  text-lg mt-5 md:text-3xl`}
@@ -77,9 +77,9 @@ export default function FirstContent() {
           <p
             className={`flex ${abel.className} w-4/5  text-lg mt-5 md:text-3xl`}
           >
-            Compre agora e dscubra como transformar suas interaçõesem vendas!
+            Compre agora e descubra como transformar suas interações em vendas!
           </p>
-          <div className=" ">
+          <div>
             <button
               className={`${archivoBlack.className} text-xl  bg-[#FFEC5C] rounded-xl mb-10 mt-10 pt-4 pb-4 pl-10 pr-10 shadow-xl hover:bg-white transition-all ease-in duration-200`}
             >
