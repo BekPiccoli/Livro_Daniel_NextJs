@@ -1,3 +1,5 @@
+"use client";
+
 import Image from "next/image";
 import Vector from "@/../public/images/Vector.webp";
 import X from "@/../public/images/X.webp";

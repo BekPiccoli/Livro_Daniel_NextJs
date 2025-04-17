@@ -1,3 +1,5 @@
+"use client";
+
 import Image from "next/image";
 import Book from "@/../public/images/BookOptimized.webp";
 import SecondBook from "@/../public/images/SecondBookOptimized.webp";

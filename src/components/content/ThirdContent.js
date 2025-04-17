@@ -1,3 +1,5 @@
+"use client";
+
 import Image from "next/image";
 import sandroPref from "@/../public/images/SandroPreface.webp";
 import archivoBlack from "@/fontes/ArchivoBlack.js";

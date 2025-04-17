@@ -1,3 +1,5 @@
+"use client";
+
 import InputNameNumber from "@/components/inputs/InputNameNumber";
 import Image from "next/image";
 import Daniel from "@/../public/images/DanielOptimized.webp";
