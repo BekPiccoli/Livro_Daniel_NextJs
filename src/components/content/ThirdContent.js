@@ -142,9 +142,7 @@ export default function ThirdContent({ prefacioRef }) {
                   </p>
                 </div>
                 <div className="flex flex-col items-center md:flex md:flex-row ">
-                  <p
-                    className={`${abel.className}font-Abel text-white md:text-lg`}
-                  >
+                  <p className={`${abel.className} text-white md:text-lg`}>
                     <span>✔</span> Capa premium e
                   </p>
                   <p
