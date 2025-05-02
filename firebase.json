@@ -4,13 +4,37 @@
     "ignore": ["firebase.json", "/node_modules/", "/.*\\.swp"],
     "headers": [
       {
-        "source": "/",
-        "headers": [
-          {
-            "key": "Cache-Control",
-            "value": "no-cache, no-store, must-revalidate"
-          }
-        ]
+      "source" : "**/*.@(eot|otf|ttf|ttc|woff|woff2|font.css|json|xml)",
+      "headers" : [ {
+        "key" : "Access-Control-Allow-Origin",
+        "value" : "*"
+      },
+      {
+        "key" : "Cache-Control",
+        "value" : "max-age=31622400"
+      }
+    ]
+      }, 
+      {
+      "source" : "**/*.@(jpg|jpeg|gif|png|svg)",
+      "headers" : [ {
+        "key" : "Cache-Control",
+        "value" : "max-age=31536000"
+      } ]
+      }, 
+      {
+        "source" : "**/*.@(css|js)",
+        "headers" : [ {
+          "key" : "Cache-Control",
+          "value" : "max-age=31622400"
+        } ]
+      }, 
+      {
+        "source" : "**/*.@(mp3)",
+        "headers" : [ {
+          "key" : "Cache-Control",
+          "value" : "max-age=604800"
+        } ]
       },
       {
         "source": "/sitemap.xml",
@@ -29,8 +53,7 @@
         "value": "application/xml"
       }
     ]
-  }
-      
+  }     
     ]
   }
 }
